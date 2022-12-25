@@ -1,0 +1,54 @@
+.contact{
+    display: flex;
+}
+.cleft{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+.cleft :nth-child(1) {
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.cleft :nth-child(2) {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+.cleft :nth-child(3){
+    font-size: 1.2rem;
+}
+.iicons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.iicons * {
+    cursor: pointer;
+}
+@media only screen and (max-width:800px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+    .cleft :nth-child(1) {
+        font-size: 1.2rem;
+    }
+    
+    .cleft :nth-child(2) {
+        font-size: 1.2rem;
+    }
+    .cleft :nth-child(3){
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
+    .iicons {
+        gap: 0.6rem;
+        margin-top: 0.7rem;
+        margin-left: -1rem;
+    }
+}

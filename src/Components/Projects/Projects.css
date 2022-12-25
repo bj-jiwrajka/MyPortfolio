@@ -1,0 +1,32 @@
+.pbtn{
+    width: 19rem;
+
+}
+.sleft :nth-child(3){
+    font-size: 1.2rem;
+}
+.sleft :nth-child(4) button{
+font-size: 1rem;
+font-weight: 100;
+color: white;
+}
+.projects{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-bottom: 3rem;
+}
+@media only screen and (max-width:800px) {
+    .projects{
+    height: 190vh;
+    margin-left: -2rem;
+
+    padding-bottom: 13rem;
+
+    }
+.sright{
+    margin-left: -5rem;
+}
+    
+}
