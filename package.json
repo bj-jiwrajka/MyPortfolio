@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bj-jiwrajka.github.io/my_portfolio_website/",
   "name": "myportfolioweb",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +18,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
   },
   "eslintConfig": {
     "extends": [
