@@ -6,17 +6,18 @@ import food from '../../img/myonlinemeal.jpg';
 import Card from '../Card/Card';
 const Projects = () => {
     return (
-        <div className="projects">
+        <div className="projects" id='Projects'>
             <div className="sleft">
                 <span>Projects I've</span>
                 <span>worked in..</span>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam voluptatem assumenda beatae fuga aperiam at tempore quia exercitationem sit.</span>
+                <span>I have worked on several team projects under the clubs and societies as well as on individual projects in the past one year.I have attached some of my projects here.Also, don't forget to check out my Github profile:</span>
                 <a href="https://github.com/bj-jiwrajka/" >
                     <button className='button sbtn'>My Github</button>
-                </a>            </div>
+                </a>
+                </div>
 
             <div className="sright">
-                <div style={{ top: "2rem", left: "-4rem" }}>
+                <div className='srcard'>
                     <Card
                         emoji={weather}
                         heading='MyWeatherWebsite'
@@ -28,7 +29,7 @@ const Projects = () => {
                 </div>
 
 
-                <div style={{ top: "2rem", left: "4rem" }}>
+                <div className='srcard '>
                     <Card
                         emoji={food}
                         heading='MyOnlineMeal'
@@ -39,7 +40,7 @@ const Projects = () => {
 
 
                 </div>
-                <div style={{ top: "2rem", left: "-4rem" }}>
+                <div className='srcard'>
                     <Card
                         emoji={todo}
                         heading='MyToDoList'

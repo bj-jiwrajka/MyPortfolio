@@ -2,7 +2,8 @@
   padding: 4rem 0;
   display: flex;
    justify-content: center;
-   align-items: center;
+   /* align-items: center; */
+   margin-left: 2rem;
    flex-direction: column;
     padding-bottom: 8rem;
 }
@@ -41,14 +42,14 @@
 
 .sright {
     display: flex;
-    flex: 1;
+    flex: 1; 
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:700px) {
  .services{
-    margin-left: -2rem;
+    /* margin-left: -2rem; */
     padding-bottom: 13rem;
  }
     
@@ -65,10 +66,7 @@
     }
     .sright{
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 60vw;
-        margin-left: -5rem;
+  flex-direction: column;
     }
+ 
 }

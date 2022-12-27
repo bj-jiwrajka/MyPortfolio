@@ -8,16 +8,15 @@ import cp from '../../img/cp.jpeg';
 
 const Services = () => {
     return (
-        <div className="services">
+        <div className="services" id='Skills'>
             <div className="sleft">
-                <span>Skills I am</span>
+                <span>Skills I am</span> 
                 <span>Expert at...</span>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nam voluptatem assumenda beatae fuga aperiam at tempore quia exercitationem sit.</span>
-<a href="https://docs.google.com/document/d/1o3hfnMmN0qJ18wD2RKtJwRx3bJRRNOOhBpj2drMKpsg/edit?usp=sharing">                <button className='button sbtn'>My Resume</button>
-</a>
+                <span>I am a professional web developer and a part-time competitve programmer. I also love to organise events on various ocassions</span>
+
             </div>
             <div className="sright">
-                <div style={{ top: "2rem", left: "-4rem" }}>
+                <div>
                     <Card
                         emoji={webdev}
                         heading='Web Development'
@@ -26,14 +25,14 @@ const Services = () => {
                 </div>
 
 
-                <div style={{ top: "2rem", left: "4rem" }}>
+                <div>
                     <Card
                         emoji={cp}
                         heading='Competitive Programming'
                         desc=' I have participated in numerous coding contests at various coding platforms like Codechef, Codeforces and Newton School. '
                     />
                 </div>
-                <div style={{ top: "2rem", left: "-4rem" }}>
+                <div>
                     <Card
                         emoji={event}
                         heading='Event Management'

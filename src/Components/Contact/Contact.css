@@ -1,5 +1,6 @@
 .contact{
     display: flex;
+    margin-left: 2rem;
 }
 .cleft{
     display: flex;
@@ -11,6 +12,7 @@
     font-size: 3rem;
     color: var(--black);
     font-weight: bold;
+    margin-bottom: -0.5rem;
 }
 
 .cleft :nth-child(2) {
@@ -30,25 +32,26 @@
 .iicons * {
     cursor: pointer;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:700px) {
   .contact{
     display: flex;
     flex-direction: column;
   }
     .cleft :nth-child(1) {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     
     .cleft :nth-child(2) {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .cleft :nth-child(3){
-        font-size: 0.7rem;
+        font-size: 1rem;
         margin-top: 0.5rem;
     }
     .iicons {
         gap: 0.6rem;
         margin-top: 0.7rem;
         margin-left: -1rem;
+        
     }
 }

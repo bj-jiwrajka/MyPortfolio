@@ -1,6 +1,5 @@
 .pbtn{
-    width: 19rem;
-
+    width: 18rem;
 }
 .sleft :nth-child(3){
     font-size: 1.2rem;
@@ -13,20 +12,26 @@ color: white;
 .projects{
    display: flex;
    justify-content: center;
-   align-items: center;
+   /* align-items: center; */
    flex-direction: column;
    padding-bottom: 3rem;
+   margin-left: 2rem;
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:700px) {
     .projects{
     height: 190vh;
-    margin-left: -2rem;
+    /* margin-left: -2rem; */
 
     padding-bottom: 13rem;
 
     }
-.sright{
-    margin-left: -5rem;
-}
-    
+    .srcard{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+
+
+
+    }
 }

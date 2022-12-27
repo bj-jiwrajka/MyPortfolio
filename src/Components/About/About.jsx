@@ -1,16 +1,26 @@
 import React from 'react'
 import './About.css'
-import girl from '../../img/profile2.jpg'
+import Bijay from '../../img/Bijay.jpg'
 const About = () => {
   return (
-<div className='about'> 
-    <div className="aleft">
-<img src={girl} alt="" />
-    </div>
+<div className='about' id='About'> 
+   
     <div className="aright">
     <span>Know more... </span>
                 <span>About Me</span>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium quam sed quo veritatis libero numquam debitis, suscipit commodi sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi necessitatibus minima voluptatum alias. Tempora necessitatibus totam obcaecati nesciunt accusantium, maiores pariatur odit dicta velit consectetur cupiditate ipsum quidem iusto animi voluptas recusandae! Eligendi, et!</span>
+                <span>A passionate and hard working software developer and a competitive programmer!
+                  <br></br>
+                  <br></br>
+                  I am currently in my 2nd year of B.Tech in CSE at National Institute of Technology, Silchar. I have been a part of global community such as Google Developer Students' Club,NITS and other societies such as Computer Science Society,NITS since the start of my academic year. I have been a part of several small and big projects organised under the clubs and societies.
+                  <br>
+                  </br>
+                  <br>
+                  </br>
+                  I have also been practising Competitive Programming at various coding platforms such as Codeforces, Codechef, Leetcode since the beginning of my 3rd semester.I have solved nearly 250+ problems combined at all the platforms.
+                </span>
+    </div>
+    <div className="aleft">
+<img src={Bijay} alt="" />
     </div>
 </div>
   )

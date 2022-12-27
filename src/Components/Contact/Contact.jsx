@@ -7,10 +7,10 @@ import Facebook from '../../img/icons8-facebook-48.png';
 import Gmail from '../../img/icons8-gmail-logo.gif';
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id='Contact'>
       <div className="cleft">
-        <span>Contact me</span>
-        <span>here...</span>
+        <span>You can reach</span>
+        <span>me at...</span>
         <span>Main road, Mankachar | +91 8724989869</span>
       </div>
       <div className="cright">
