@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://bj-jiwrajka.github.io/my_portfolio_website/",
   "dependencies": {
+    "@lottiefiles/lottie-player": "^1.7.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -40,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.0",
     "gh-pages": "^4.0.0"
   }
 }

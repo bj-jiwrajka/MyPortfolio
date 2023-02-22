@@ -8,6 +8,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    width: 60vw;
 }
 .aright :nth-child(1) {
     font-size: 3rem;
@@ -23,9 +24,13 @@
 
 .aright :nth-child(3) {
     font-size: 1.2rem;
-    color: var(--gray);
+    color: var(--about-section-text);
     font-weight: 100;
     /* margin: 1rem 0; */
+}
+.aleft{
+    position: absolute;
+    right: 10%;
 }
 @media only screen and (max-width:700px) {
     .aleft :nth-child(1){
