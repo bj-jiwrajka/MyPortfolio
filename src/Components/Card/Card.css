@@ -1,24 +1,54 @@
 .card {
-    width: 18rem;
-    height: 19rem;
-    /* position: absolute; */
+    width: 12em;
+    height: 8em;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     border: 3px solid orange;
-    border-radius: 30px;
+    border-radius: 3%;
+    background-color: antiquewhite;
     margin: 2rem 4rem 0.1rem 0;
     justify-content: center;
+    cursor: pointer;
 }
 
-.card :nth-child(3) {
+.card img {
+    width: 12em;
+    height: 8em;
+    border-radius: 3%;
+}
+
+.card:hover :nth-child(3) {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+}
+
+.card :nth-child(3) {
+    display: none;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card a {
+    display: none;
+}
+
+.card:hover a {
+    display: block;
+}
+
+.cardHeading {
+    position: relative;
+    top: -20%;
+    margin-left: 0.3em;
+    /* text-decoration: none; */
 }
 
 @media only screen and (max-width:700px) {

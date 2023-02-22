@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     background-image: linear-gradient(20deg, white, orange);
+    /* background-color: black; */
     z-index: 1;
 }
 
@@ -72,5 +73,23 @@
     .left :nth-child(1) {
         font-size: 1rem;
         margin-left: -1rem;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 3vh;
+        right:50vw;
+ width: 50%;
+        height: 95vh;
+        /* background-color:orange; */
+    background-image: linear-gradient(20deg, white, orange);
+
+        opacity: 1;
+        flex-direction: column;
+        transform: translateX(100%);
+        /* transition: 0.5s ease-in; */
+    }
+    .nav_active{
+        transform: translateX(-100%);
     }
 }
