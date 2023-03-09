@@ -1,7 +1,11 @@
 #headLottie{
-    width: 600px;
-    height: 600px;
+    width: 400px;
     position: absolute;
-    top: -85%;
-    left: 20%;
+    top: -10%;
+    left: 65%;
+}
+@media screen and (max-width: 800px) {
+    #headLottie{
+        display: none;
+    }
 }

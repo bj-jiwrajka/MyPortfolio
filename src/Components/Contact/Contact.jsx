@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="cright">
         <div className="iicons">
           <a href="https://www.linkedin.com/in/bijay-jiwrajka-6b308a225/" target="_blank"  rel="noreferrer"> <img src={Linkedin} alt="" /></a>
-          <a href="https://github.com/bj-jiwrajka" target="_blank"  rel="noreferrer"> <img src={Facebook} alt="" /></a>
+          <a href="https://www.facebook.com/bijay.jiwrajka.1" target="_blank"  rel="noreferrer"> <img src={Facebook} alt="" /></a>
           <a href="mailto:jiwrajkabijay@gmail.com" target="_blank"  rel="noreferrer" > <img src={Gmail} alt="" /></a>
           <a href="https://www.instagram.com/bj_jiwrajka/" target="_blank"  rel="noreferrer"> <img src={Instagram} alt="" /></a>
           <a href="https://twitter.com/bj_jiwrajka" target="_blank"  rel="noreferrer"> <img src={Twitter} alt="" /></a>

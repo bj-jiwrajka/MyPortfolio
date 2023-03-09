@@ -1,99 +1,102 @@
 .intro {
     display: flex;
-    height: 77 vh;
-    margin: 8rem 0 9rem 2rem;
-
+    margin-top: 2em;
+    height: 25vh;
 }
 
-.ileft {
+.intro .ileft {
     display: flex;
-    position: relative;
-    flex: 1;
+    flex: 0.7;
     flex-direction: column;
+    margin-left: 3em;
+    margin-top: 2em;
 }
 
-.ileft :nth-child(1) {
+.intro .ileft :nth-child(1) {
     font-size: 3rem;
     color: var(--black);
     font-weight: bold;
+    user-select: none;
 }
 
-.ileft :nth-child(2) {
+.intro .ileft :nth-child(2) {
     font-size: 3rem;
     font-weight: bold;
     color: var(--orange);
+    user-select: none;
 }
 
-.ileft :nth-child(3) {
+.intro .ileft :nth-child(3) {
     font-size: 1.2rem;
-    color: var(--gray);
+    color:black;
     font-weight: 100;
-    /* margin: 1rem 0; */
-}
-.ileft :nth-child(4) button{
-    font-size: 1rem;
-    color:white;
-    font-weight: 100;
-}
-.ibtn {
-    height: 2.5rem;
-    width: 10rem;
     margin: 1rem 0;
+    width: 50vw;
+}
+
+.intro .ileft :nth-child(4) button, .ileft :nth-child(5) button {
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+    width: 9em;
+    
 }
 
 
+.ileft :nth-child(4) button:hover, .ileft :nth-child(5) button:hover{
+    background-color:rgb(220, 132, 60);
 
+}
 .iright {
     flex: 1;
     position: relative;
 
 }
+.ileft .buttons{
+    display: flex;
+    gap: 1em;
+}
+
 
 .iright * {
     position: absolute;
-    /* z-index: 1; */
 
 }
 
-.iright :nth-child(1) {
-    transform: scale(0.70);
-    top: -9%;
-    left: -15%;
-
+@media only screen and (max-width:800px) {
+.intro{
+    height: 5em;
 }
 
-.iright :nth-child(2){
-    transform: scale(0.67);
-    top: -4.5rem;
-    left: -3rem;
+   .intro .ileft :nth-child(1) {
+        font-size: 2rem;
+    }
+
+   .intro .ileft :nth-child(2) {
+        font-size: 2rem;
+    }
+
+  .intro  .ileft :nth-child(3) {
+        font-size: 1rem;
+    }
+
+  .intro  .ileft :nth-child(4) button {
+        font-size: 1rem;
+        color: white;
+        font-weight: 100;
+    }
 }
 
-.iright :nth-child(3) {
-    transform: scale(1.4);
-    left: 28%;
-}
-@media only screen and (max-width:700px) {
-    
-.ileft :nth-child(1) {
-    font-size: 2rem;
-}
 
-.ileft :nth-child(2) {
-    font-size: 2rem;
-}
-
-.ileft :nth-child(3) {
-    font-size: 1rem;
-}
-.ileft :nth-child(4) button{
-    font-size: 1rem;
-    color:white;
-    font-weight: 100;
-}
-.intro {
-    margin: 6rem 0 9rem 0;
-    padding-left: 2rem;
-
-}
-
-}
+@media only screen and (max-width: 500px) {
+    .intro{
+        height: 6em;
+    }
+    .intro .ileft{
+        margin-left: 1em;
+    }
+    .intro .ileft :nth-child(3) {
+        width: 80vw;
+        margin-right: 1em;
+    }
+    }

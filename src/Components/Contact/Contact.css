@@ -1,6 +1,7 @@
 .contact{
     display: flex;
-    margin-left: 2rem;
+    margin-left: 3em;
+    min-height: 25vh;
 }
 .cleft{
     display: flex;
@@ -25,8 +26,11 @@
 }
 .iicons {
     display: flex;
-    gap: 0.8rem;
-    margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+        margin-top: 2em;
+        gap: 0.5em;
+        margin-right: 1em;
 }
 
 .iicons * {
@@ -36,6 +40,7 @@
   .contact{
     display: flex;
     flex-direction: column;
+    margin-left: 1em;
   }
     .cleft :nth-child(1) {
         font-size: 2rem;
@@ -47,11 +52,5 @@
     .cleft :nth-child(3){
         font-size: 1rem;
         margin-top: 0.5rem;
-    }
-    .iicons {
-        gap: 0.6rem;
-        margin-top: 0.7rem;
-        margin-left: -1rem;
-        
     }
 }
