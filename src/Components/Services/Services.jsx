@@ -6,7 +6,7 @@ const skillsData = [
         id: 1,
         name: 'Programming Languages',
         description:
-            'I have experience building responsive and user-friendly websites using HTML, CSS, and JavaScript. I also have experience with various front-end frameworks. Expertise in React JS to deliver cutting-edge web applications with the best performance and scalability. Fluid HTML and CSS integration to create stunning user interfaces with pixel-perfect accuracy.Proficiency in JavaScript for powerful interactive features and dynamic content.',
+            'I have a good command over various programming languages such as C, C++, JavaScript, Python ,R and Typescript. Though i know multiple programming languages, i am most comfortable with JavaScript and C++. I have practised Data Structures and ALgorithms in C and C++. I am presently learning Object Oriented Programming in C++',
         // icon: 'fa-code',
     },
     {
