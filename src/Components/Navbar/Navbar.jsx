@@ -3,14 +3,14 @@ import './Navbar.css'
 // import toggle from '../../img/togglelight.png';
 // import togglemenu from '../../img/toggle.png';
 import { Link } from 'react-scroll';
-import { useState } from 'react';
+// import { useState } from 'react';
 import bjlogo from '../../img/bjlogo.jpg';
 
 function Navbar() {
-  const[active,setActive]=useState("nav_menu");
-  const toggleNav=()=>{
-  active==="nav_menu" ? setActive("nav_menu nav_active"): setActive("nav_menu"); 
-  }
+  // const[active,setActive]=useState("nav_menu");
+  // const toggleNav=()=>{
+  // active==="nav_menu" ? setActive("nav_menu nav_active"): setActive("nav_menu"); 
+  // }
   // const [theme, setTheme] = useState('light');
 
   // const toggleTheme = () => {
@@ -26,7 +26,7 @@ function Navbar() {
         </div>
 
         <div className="right" style={{ sticky: true }} >
-          <ul className={active}>
+          <ul>
             <Link spy={true} to='Home' smooth={true} activeClass="activeClass"><li>Home</li></Link>
             <Link spy={true} to='About' smooth={true} ><li>About</li></Link>
             <Link spy={true} to='Services' smooth={true} ><li>Skills</li></Link>
