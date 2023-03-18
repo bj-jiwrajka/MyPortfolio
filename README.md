@@ -1,1 +1,2 @@
-Do checkout my portfolio at https://bjiwrajka.vercel.app
+Hiii, I am Bijay.  
+                   Do checkout my personal portfolio at https://bjiwrajka.vercel.app/
