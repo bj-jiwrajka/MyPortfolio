@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.28e65545.css",
+    "main.js": "/static/js/main.cb1c8261.js",
+    "static/js/435.c2ced91c.chunk.js": "/static/js/435.c2ced91c.chunk.js",
+    "static/media/Bijay.jpg": "/static/media/Bijay.1ff50b15f15b7cdd6399.jpg",
+    "static/media/bjlogo.jpg": "/static/media/bjlogo.5956c854ee43c83fb873.jpg",
+    "index.html": "/index.html",
+    "main.28e65545.css.map": "/static/css/main.28e65545.css.map",
+    "main.cb1c8261.js.map": "/static/js/main.cb1c8261.js.map",
+    "435.c2ced91c.chunk.js.map": "/static/js/435.c2ced91c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28e65545.css",
+    "static/js/main.cb1c8261.js"
+  ]
+}
