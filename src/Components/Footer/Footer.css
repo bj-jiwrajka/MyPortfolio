@@ -1,0 +1,93 @@
+.footer {
+    background-color: #201e26;
+    color: #828282;
+    padding: 1em 0;
+    user-select: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+.fleft1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fleft1 ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    gap: 0.2em;
+}
+
+.fleft1 ul li a {
+    letter-spacing: 0.05rem;
+    color: #828282;
+    text-decoration: none;
+}
+
+.fleft3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    
+}
+
+.fleft3 ul {
+    list-style: none;
+    text-align: center;
+    letter-spacing: 0.09rem;
+    line-height: 1.3em;
+}
+.fleft3 ul  :hover, .fleft1 ul :hover{
+    color: rgb(165, 165, 165);
+}
+.fright2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1em;
+    gap: 0.4em;
+}
+.fright2 a{
+    color: #828282;
+
+
+}
+.fright2 :hover{
+    color: rgb(165, 165, 165);
+
+}
+
+.footer__text {
+    font-size: 0.5em;
+    margin-top: 1em;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 683px) {
+   .footer-container{
+    flex-direction: column;
+   }
+   .fleft1, .fleft3{
+    margin-left: -1.5em;
+   }
+   .fleft3{
+    font-size: 0.8em;
+   }
+   .fleft1{
+font-size: 0.8em;
+   }
+}

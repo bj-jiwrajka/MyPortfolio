@@ -1,14 +1,14 @@
-.contact{
-    display: flex;
+.contact {
     margin-left: 3em;
-    min-height: 25vh;
+    padding-top: 2%;
+    margin-bottom: 2em;
 }
-.cleft{
+
+.cleft {
     display: flex;
-    position: relative;
-    flex: 1;
     flex-direction: column;
 }
+
 .cleft :nth-child(1) {
     font-size: 3rem;
     color: var(--black);
@@ -21,36 +21,97 @@
     font-weight: bold;
     color: var(--orange);
 }
-.cleft :nth-child(3){
-    font-size: 1.2rem;
-}
-.iicons {
+
+
+.container {
+    height: 23em;
+    width: 20em;
     display: flex;
-  justify-content: center;
-  align-items: center;
-        margin-top: 2em;
-        gap: 0.5em;
-        margin-right: 1em;
+    background-color: rgb(255, 216, 171);
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+
 }
 
-.iicons * {
+.container .form-group {
+    margin-bottom: 1.2em;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    margin-right: 0.6em;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group input,
+textarea {
+    border: none;
+    font-size: 0.8em;
+    padding: 0.2em;
+}
+
+button[type="submit"] {
+    padding: 0.4em 1.5em;
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    font-size: 1em;
     cursor: pointer;
 }
+
+button[type="submit"]:hover {
+    background-color: rgb(220, 132, 60);
+}
+
+.textcontact {
+    margin-top: 1em;
+
+}
+
 @media only screen and (max-width:700px) {
-  .contact{
-    display: flex;
-    flex-direction: column;
-    margin-left: 1em;
-  }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+        /* margin-bottom: 0; */
+
+    }
+
+    .cleft {
+        margin-bottom: 2em;
+    }
+
     .cleft :nth-child(1) {
         font-size: 2rem;
     }
-    
+
     .cleft :nth-child(2) {
         font-size: 2rem;
     }
-    .cleft :nth-child(3){
-        font-size: 1rem;
-        margin-top: 0.5rem;
+
+    .container {
+        width: 14em;
+        height: 16em;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container .form-group {
+        margin-bottom: 10px;
     }
 }
+@media screen and (max-width:500px) {
+
+    .contact
+  {
+    margin-left: 0em;
+  }
+  .cleft :nth-child(1), .cleft :nth-child(2){
+    margin-left: 1em;
+  }
+  
+  
+  }

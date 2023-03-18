@@ -1,32 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Contact.css';
-import Twitter from '../../img/icons8-twitter-48.png';
-import Linkedin from '../../img/icons8-linkedin-48.png';
-import Instagram from '../../img/icons8-instagram-48.png';
-import Facebook from '../../img/icons8-facebook-48.png';
-import Gmail from '../../img/icons8-gmail-logo.gif';
+import Feedback from '../Feedback/Feedback';
+
 const Contact = () => {
+  const [showFeedback, setShowFeedback] = useState(false);
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    setShowFeedback(true);
+  };
+
   return (
-    <div className="contact" id='Contact'>
-      <br></br>
+    <div className="contact" id="Contact">
+      <br />
       <br />
       <div className="cleft">
         <span>You can reach</span>
         <span>me at...</span>
-        <span>Main road, Mankachar | +91 8724989869</span>
       </div>
-      <div className="cright">
-        <div className="iicons">
-          <a href="https://www.linkedin.com/in/bijay-jiwrajka-6b308a225/" target="_blank"  rel="noreferrer"> <img src={Linkedin} alt="" /></a>
-          <a href="https://www.facebook.com/bijay.jiwrajka.1" target="_blank"  rel="noreferrer"> <img src={Facebook} alt="" /></a>
-          <a href="mailto:jiwrajkabijay@gmail.com" target="_blank"  rel="noreferrer" > <img src={Gmail} alt="" /></a>
-          <a href="https://www.instagram.com/bj_jiwrajka/" target="_blank"  rel="noreferrer"> <img src={Instagram} alt="" /></a>
-          <a href="https://twitter.com/bj_jiwrajka" target="_blank"  rel="noreferrer"> <img src={Twitter} alt="" /></a>
+      <div className="container">
+        <form onSubmit={handleFormSubmit}>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
 
-        </div>
+          <button type="submit">Send</button>
+        </form>
+
+        {showFeedback ? (
+          <Feedback />
+        ) : (
+          <div>
+          </div>
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

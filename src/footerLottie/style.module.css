@@ -1,0 +1,13 @@
+#footerLottie{
+    position: absolute;
+    width: 19em;
+    height: 8em;
+    left: 0;
+}
+
+
+@media screen and (max-width:683px) {
+    #footerLottie{
+        display: none;
+    }
+}

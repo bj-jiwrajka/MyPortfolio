@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 // import toggle from '../../img/togglelight.png';
-import togglemenu from '../../img/toggle.png';
+// import togglemenu from '../../img/toggle.png';
 import { Link } from 'react-scroll';
 import { useState } from 'react';
 import bjlogo from '../../img/bjlogo.jpg';

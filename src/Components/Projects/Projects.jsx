@@ -6,7 +6,7 @@ function Projects() {
     const projects = [
         {
             id: 1,
-            imgSrc: 'https://via.placeholder.com/200',
+            imgSrc: '../../assets/Project1.png',
             imgAlt: 'MyWeatherWebsite',
             title: 'MyWeatherWebsite',
             description: 'An API based simple weather website ',
@@ -14,7 +14,7 @@ function Projects() {
         },
         {
             id: 2,
-            imgSrc: 'https://via.placeholder.com/200',
+            imgSrc: '../../assets/Project2.png',
             imgAlt: 'CSSWebsite',
             title: 'CSSWebsite',
             description: 'Official website of Computer Science Society',
@@ -22,7 +22,7 @@ function Projects() {
         },
         {
             id: 3,
-            imgSrc: 'https://via.placeholder.com/200',
+            imgSrc: '../../assets/Project3.png',
             imgAlt: 'Grafiny',
             title: 'Grafiny',
             description: 'A website by the GDSC members for the students',
@@ -46,8 +46,6 @@ function Projects() {
 
                 <span>Projects I've</span>
                 <span>worked in..</span>
-                <span>I have worked on several team projects under the clubs and societies as well as on individual projects in the past one year.I have attached some of my projects here.Also, don't forget to check out my Github profile:</span>
-              
             </div>
             <animated.div style={animations} className="projects">
                 {projects.map(project => (
@@ -62,10 +60,7 @@ function Projects() {
                 ))}
             </animated.div>
         </div>
-
-
     );
 }
-
 export default Projects;
 

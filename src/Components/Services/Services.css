@@ -9,7 +9,6 @@
 }
 
 .skills__card {
-    flex: 3 0 calc(25% - 1rem);
     margin-bottom: 1rem;
     padding: 2rem;
     border: 2px solid #d8d8d8;
@@ -17,6 +16,8 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     margin-left: 3em;
+    margin-right: 1em;
+    flex: 2 0 calc(20%);
 }
 
 .skills__card:hover {

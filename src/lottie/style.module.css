@@ -4,8 +4,19 @@
     top: -10%;
     left: 65%;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1160px) {
     #headLottie{
-        display: none;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #headLottie{
+        width: 260px;
+    }
+}
+@media screen and (max-width: 759px) {
+    #headLottie{
+    display: none;
     }
 }
