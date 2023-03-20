@@ -1,8 +1,8 @@
 .footer {
-    background-color: #201e26;
-    color: #828282;
     padding: 1em 0;
+    color:var(--footer-text);
     user-select: none;
+    background: linear-gradient(180deg, var(--orange) 0%, rgba(33, 150, 243, 0.644) 100%);
 }
 
 .footer-container {
@@ -30,7 +30,7 @@
 
 .fleft1 ul li a {
     letter-spacing: 0.05rem;
-    color: #828282;
+    color:var(--footer-text);
     text-decoration: none;
 }
 
@@ -51,6 +51,7 @@
 }
 .fleft3 ul  :hover, .fleft1 ul :hover{
     color: rgb(165, 165, 165);
+    color: var(--footer-text-hover);
 }
 .fright2 {
     display: flex;
@@ -61,12 +62,11 @@
     gap: 0.4em;
 }
 .fright2 a{
-    color: #828282;
-
-
+    color:var(--footer-text);
 }
+
 .fright2 :hover{
-    color: rgb(165, 165, 165);
+    color: var(--footer-text-hover);
 
 }
 
@@ -74,7 +74,7 @@
     font-size: 0.5em;
     margin-top: 1em;
     text-align: center;
-    color: white;
+
 }
 
 @media screen and (max-width: 683px) {

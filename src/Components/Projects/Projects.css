@@ -71,7 +71,7 @@
 }
 
 .project-card a:hover {
-  background-color: rgb(220, 132, 60);
+background-color: var(--blue-hover);
 }
 
 @media screen and (max-width: 800px) {

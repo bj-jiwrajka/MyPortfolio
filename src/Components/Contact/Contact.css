@@ -24,15 +24,13 @@
 
 
 .container {
-    height: 23em;
     width: 20em;
     display: flex;
-    background-color: rgb(255, 216, 171);
+    background-color: var(  --light-blue-contact);
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin: auto;
-
+    padding: 3.5em 0.2em;
 }
 
 .container .form-group {
@@ -63,7 +61,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(220, 132, 60);
+  background-color: var(--blue-hover);
 }
 
 .textcontact {
@@ -94,7 +92,6 @@ button[type="submit"]:hover {
 
     .container {
         width: 14em;
-        height: 16em;
         justify-content: center;
         margin: auto;
     }

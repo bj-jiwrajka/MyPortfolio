@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import ContactLottie from './../../footerLottie/index'
 import Feedback from '../Feedback/Feedback';
 
 const Contact = () => {
@@ -42,6 +43,8 @@ const Contact = () => {
           <div>
           </div>
         )}
+        <ContactLottie />
+
       </div>
     </div>
   );

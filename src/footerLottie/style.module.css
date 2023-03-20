@@ -1,13 +1,11 @@
 #footerLottie{
+    width: 48vw;
     position: absolute;
-    width: 19em;
-    height: 8em;
-    left: 0;
+    left:50vw;
 }
 
-
-@media screen and (max-width:683px) {
+@media screen and (max-width:900px) {
     #footerLottie{
-        display: none;
+     display: none;
     }
 }
