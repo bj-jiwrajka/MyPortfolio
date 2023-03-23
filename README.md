@@ -31,4 +31,4 @@ To run this project locally, you can follow these steps:
 
 ## Feedback and Contact
 
-If you have any feedback or would like to get in touch, feel free to reach out to me at [your-email-address](mailto:jiwrajkabijay@gmail.com). Thank you for visiting my portfolio!
+If you have any feedback or would like to get in touch, feel free to reach out to me at [jiwrajkabijay@gmail.com](mailto:jiwrajkabijay@gmail.com). Thank you for visiting my portfolio!
