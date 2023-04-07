@@ -6,28 +6,29 @@ function Projects() {
     const projects = [
         {
             id: 1,
-            imgSrc: '../../assets/Project1.png',
-            imgAlt: 'MyWeatherWebsite',
-            title: 'MyWeatherWebsite',
-            description: 'An API based simple weather website ',
-            link: 'https://bj-jiwrajka.github.io/first_weather_website/'
-        },
-        {
-            id: 2,
-            imgSrc: '../../assets/Project2.png',
-            imgAlt: 'CSSWebsite',
-            title: 'CSSWebsite',
-            description: 'Official website of Computer Science Society',
-            link: 'https://nitscss.live'
+            imgSrc: '/assets/Oikyotaan.png',
+            imgAlt: 'Oikyotaan Website',
+            title: 'Oikyotaan Website',
+            description: 'Official website of Oikyotaan 2023 - Bengali New Year',
+            link: 'https://oikyotaan2023.in'
         },
         {
             id: 3,
-            imgSrc: '../../assets/Project3.png',
+            imgSrc: '/assets/Project3.png',
             imgAlt: 'Grafiny',
             title: 'Grafiny',
             description: 'A website by the GDSC members for the students',
             link: 'https://deploy-preview-30--grafiny-nits.netlify.app/'
-        }
+        },
+        {
+            id: 2,
+            imgSrc: '/assets/Project2.png',
+            imgAlt: 'CSSWebsite',
+            title: 'CSSWebsite',
+            description: 'Official website of Computer Science Society,, NIT Silchar ',
+            link: 'https://nitscss.live'
+        },
+      
     ];
 
     const animations = useSpring({
