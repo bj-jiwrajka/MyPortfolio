@@ -28,7 +28,7 @@ function Projects() {
             description: 'Official website of Computer Science Society,, NIT Silchar ',
             link: 'https://nitscss.live'
         },
-      
+
     ];
 
     const animations = useSpring({
@@ -39,16 +39,12 @@ function Projects() {
     });
 
     return (
-        <div>
-
-
-
-            <div className="ileft" id='Projects'>
-
-                <span>Projects I've</span>
-                <span>worked in..</span>
+        <div className="projects" id='Projects'>
+            <div className="pleft">
+                Projects I've<span> worked in..</span>
             </div>
-            <animated.div style={animations} className="projects">
+
+            <div className="pright">
                 {projects.map(project => (
                     <ProjectCard
                         key={project.id}
@@ -59,8 +55,10 @@ function Projects() {
                         link={project.link}
                     />
                 ))}
-            </animated.div>
+            </div>
+
         </div>
+
     );
 }
 export default Projects;

@@ -1,7 +1,7 @@
 :root {
-  --orange: #1f77fc;
+  --orange: #094298;
   --light-blue-contact: #e6f7ff;
-  --blue-hover: #1c66d6;
+  --blue-hover: rgb(0, 0, 101);
   --black: #242D49;
   --gray: #788097;
   --blueCard: #DDF8FE;
@@ -11,12 +11,14 @@
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   --footer-text: #fff;
   --footer-text-hover: #ececec;
+  --default-bg: rgb(239, 244, 246);
 }
 
 .App {
   overflow: hidden;
-  color: var(--black);
+  color: black;
   padding-left: 3.5rem;
+  background-color: rgb(239, 244, 246);
 }
 
 .button {

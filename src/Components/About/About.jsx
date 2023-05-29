@@ -1,35 +1,91 @@
-import React from 'react'
-import './About.css'
-import Bijay from '../../img/Bijay.jpg'
+import React, { useState } from 'react';
+import './About.css';
+import Bijay from '../../img/Bijay.jpg';
+
 const About = () => {
+  const [rotateY, setRotateY] = useState(0);
+  const [rotateX, setRotateX] = useState(0);
+
+  const handleMouseMove = (event) => {
+    const containerWidth = event.currentTarget.offsetWidth;
+    const containerHeight = event.currentTarget.offsetHeight;
+    const centerX = containerWidth / 2;
+    const centerY = containerHeight / 2;
+    const mouseX = event.pageX - event.currentTarget.offsetLeft;
+    const mouseY = event.pageY - event.currentTarget.offsetTop;
+    const newRotateY = ((mouseX - centerX) / containerWidth) * 20;
+    const newRotateX = -((mouseY - centerY) / containerHeight) * 20;
+
+    setRotateY(newRotateY);
+    setRotateX(newRotateX);
+  };
+
+  const resetImageTransform = () => {
+    setRotateY(0);
+    setRotateX(0);
+  };
+
   return (
     <div className='about' id='About'>
-      <span className='know-more'>Know more... </span>
-      <span>About Me</span>
+      <div className='about-me'>
+        About
+        <span className='me'>Me</span>
+      </div>
       <div className='about-container'>
-        <div className="aright">
-          <span>A passionate and hard working software developer and a competitive programmer!
-            <br></br>
-            <br></br>
-            I am currently in my 2nd year of B.Tech in CSE at National Institute of Technology, Silchar. I have been a part of global community such as Google Developer Students' Club,NITS and other societies such as Computer Science Society,NITS since the start of my academic year. I have been a part of several small and big projects organised under the clubs and societies.
-            <br>
-            </br>
-            <br>
-            </br>
-            <p className="mbl_hide">
-              I have also been practising Competitive Programming at various coding platforms such as Codeforces, Codechef, Leetcode since the beginning of my 3rd semester.I have solved nearly 250+ problems combined at all the platforms.
-            </p>
+        <div
+          className="aright"
+          onMouseMove={handleMouseMove}
+          onMouseLeave={resetImageTransform}
+        >
+          <div className="image-container">
+            <img
+              src={Bijay}
+              alt="myphoto"
+              id="bending-image"
+              style={{
+                transform: `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`,
+              }}
+            />
+          </div>
+        </div>
+
+        <div className="aleft">
+          <span>
+            <span>
+              <h3>I'm Bijay</h3>
+              <h4>Passionate Web Developer | Competitive Programming Enthusiast</h4>
+            </span>
+            <br />
+            <span>
+            A third-year CSE undergraduate student at the National Institute of Technology, Silchar. I have been a part of global communities such as Google Developer Students' Club, NITS, and other societies like the Computer Science Society, NIT Silchar.
+              <br />
+              <br />
+              I'm a passionate developer who enjoys tackling challenging problems and crafting engaging websites. Over the years, I've gained valuable experience by working on diverse projects and honed my skills in software development.
+              <br />
+              <br />
+              My dedication to continuous learning has allowed me to stay up-to-date with the latest technologies and industry trends. I thrive in collaborative environments and have a strong commitment to delivering high-quality results.
+            </span>
+
+            <br />
+            <br />
+            <div className='about-info'>
+              <div>
+                <span>Age</span>: 21
+                <br />
+                <span>Email</span>: jiwrajkabijay@gmail.com
+              </div>
+              <div>
+                <span> Place</span>: Mankachar, India
+                <br />
+                <span>College</span>: National Institute of Technology, Silchar
+              </div>
+            </div>
 
           </span>
         </div>
-        <div className="aleft">
-          <img src={Bijay} alt="" />
-        </div>
-
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

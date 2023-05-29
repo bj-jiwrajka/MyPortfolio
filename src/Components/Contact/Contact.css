@@ -1,72 +1,57 @@
 .contact {
-    margin-left: 3em;
-    padding-top: 2%;
-    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .cleft {
-    display: flex;
-    flex-direction: column;
-}
-
-.cleft :nth-child(1) {
     font-size: 3rem;
-    color: var(--black);
     font-weight: bold;
-    margin-bottom: -0.5rem;
 }
 
-.cleft :nth-child(2) {
+.cleft span {
     font-size: 3rem;
     font-weight: bold;
     color: var(--orange);
 }
 
-
 .container {
-    width: 20em;
+    width: 40em;
     display: flex;
-    background-color: var(  --light-blue-contact);
-    justify-content: center;
-    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 3.5em 0.2em;
+    height: 30rem;
+    align-items: center;
+    padding-left: 3rem;
 }
 
 .container .form-group {
     margin-bottom: 1.2em;
 }
-
-.form-group label {
-    margin-bottom: 5px;
-    margin-right: 0.6em;
-    display: flex;
-    justify-content: center;
-}
-
 .form-group input,
 textarea {
-    border: none;
-    font-size: 0.8em;
+    font-size: 1rem;
     padding: 0.2em;
+    resize: none;
+    background-color: var(--default-bg);
+    width: 20rem;
+    border-color: var(--blue-hover);
 }
-
+.capitalise-name input{
+    text-transform: capitalize;
+}
 button[type="submit"] {
-    padding: 0.4em 1.5em;
-    background-color: var(--orange);
-    color: #fff;
-    border: none;
-    font-size: 1em;
-    cursor: pointer;
+    width: 9em;
+    text-transform: uppercase;
 }
 
 button[type="submit"]:hover {
-  background-color: var(--blue-hover);
-}
-
-.textcontact {
-    margin-top: 1em;
-
+    background-color: var(--blue-hover);
+    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width:700px) {
@@ -74,20 +59,10 @@ button[type="submit"]:hover {
         display: flex;
         flex-direction: column;
         margin-left: 1em;
-        /* margin-bottom: 0; */
-
     }
 
     .cleft {
         margin-bottom: 2em;
-    }
-
-    .cleft :nth-child(1) {
-        font-size: 2rem;
-    }
-
-    .cleft :nth-child(2) {
-        font-size: 2rem;
     }
 
     .container {
@@ -100,15 +75,17 @@ button[type="submit"]:hover {
         margin-bottom: 10px;
     }
 }
+
 @media screen and (max-width:500px) {
 
-    .contact
-  {
-    margin-left: 0em;
-  }
-  .cleft :nth-child(1), .cleft :nth-child(2){
-    margin-left: 1em;
-  }
-  
-  
-  }
+    .contact {
+        margin-left: 0em;
+    }
+
+    .cleft :nth-child(1),
+    .cleft :nth-child(2) {
+        margin-left: 1em;
+    }
+
+
+}

@@ -1,86 +1,74 @@
 .intro {
     display: flex;
-    margin-top: 2em;
-    height: 25vh;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 5em;
 }
 
 .intro .ileft {
     display: flex;
-    flex: 0.7;
     flex-direction: column;
-    margin-left: 3em;
-    margin-top: 2em;
 }
 
-.intro .ileft :nth-child(1) {
+.ileft .intro-bijay {
     font-size: 3rem;
     color: var(--black);
     font-weight: bold;
-    user-select: none;
 }
 
-.intro .ileft :nth-child(2) {
-    font-size: 3rem;
+.ileft :nth-child(2) {
+    font-size: 2rem;
     font-weight: bold;
+    color: var(--black);
+}
+
+.ileft .moving-text {
+    font-size: 2rem;
     color: var(--orange);
-    user-select: none;
 }
 
 .intro .ileft :nth-child(3) {
     font-size: 1.2rem;
-    color:black;
-    font-weight: 100;
-    margin: 1rem 0;
     width: 50vw;
+    font-family: "Poppins", sans-serif;
 }
 
-.intro .ileft :nth-child(4) button, .ileft :nth-child(5) button {
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttons button {
     font-size: 1rem;
-    color: white;
     font-weight: 100;
     width: 9em;
-    
 }
 
-
-.ileft :nth-child(4) button:hover, .ileft :nth-child(5) button:hover{
-  background-color: var(--blue-hover);
-
-}
-.iright {
-    flex: 1;
-    position: relative;
-
-}
-.ileft .buttons{
-    display: flex;
-    gap: 1em;
-}
-
-
-.iright * {
-    position: absolute;
-
+.buttons button:hover {
+    background-color: var(--blue-hover);
+    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width:800px) {
-.intro{
-    height: 5em;
-}
+    .intro {
+        height: 5em;
+    }
 
-   .intro .ileft :nth-child(1) {
+    .intro .ileft :nth-child(1) {
         font-size: 2rem;
     }
 
-   .intro .ileft :nth-child(2) {
+    .intro .ileft :nth-child(2) {
         font-size: 2rem;
     }
 
-  .intro  .ileft :nth-child(3) {
+    .intro .ileft :nth-child(3) {
         font-size: 1rem;
     }
 
-  .intro  .ileft :nth-child(4) button {
+    .intro .ileft :nth-child(4) button {
         font-size: 1rem;
         color: white;
         font-weight: 100;
@@ -89,14 +77,16 @@
 
 
 @media only screen and (max-width: 500px) {
-    .intro{
+    .intro {
         height: 6em;
     }
-    .intro .ileft{
+
+    .intro .ileft {
         margin-left: 1em;
     }
+
     .intro .ileft :nth-child(3) {
         width: 80vw;
         margin-right: 1em;
     }
-    }
+}

@@ -13,28 +13,24 @@ const Contact = () => {
 
   return (
     <div className="contact" id="Contact">
-      <br />
-      <br />
       <div className="cleft">
-        <span>You can reach</span>
-        <span>me at...</span>
+       Get in <span>Touch</span>
       </div>
       <div className="container">
         <form onSubmit={handleFormSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" required />
+          <div className="form-group capitalise-name">
+            <label htmlFor="name"></label>
+            <input type="text" id="name" name="name" required  placeholder='Name:'/>
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <label htmlFor="email"></label>
+            <input type="email" id="email" name="email" required placeholder='Email: ' />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <label htmlFor="message" ></label>
+            <textarea id="message" rows={6} cols={30} name="message" required placeholder='Enter Your Message'></textarea>
           </div>
-
-          <button type="submit">Send</button>
+          <button type="submit" className='button'>Send</button>
         </form>
 
         {showFeedback ? (

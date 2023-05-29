@@ -45,7 +45,7 @@
   }
   
   .thank-you-message button:hover {
-    background-color: rgb(220, 132, 60);
+    background-color: var(--blue-hover)
   }
   
   @media screen and (max-width:480px) {
