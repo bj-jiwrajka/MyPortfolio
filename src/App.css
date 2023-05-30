@@ -2,13 +2,8 @@
   --orange: #094298;
   --light-blue-contact: #e6f7ff;
   --blue-hover: rgb(0, 0, 101);
-  --black: #242D49;
-  --gray: #788097;
-  --blueCard: #DDF8FE;
-  --purple: rgb(238 210 255);
+  --black:#000;
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --orangeCard: rgba(252, 166, 31, 0.45);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
   --footer-text: #fff;
   --footer-text-hover: #ececec;
   --default-bg: rgb(239, 244, 246);
@@ -29,4 +24,11 @@
   background-color: var(--orange);
   padding: 11px 26px;
   cursor: pointer;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  border: 1px solid black;
 }

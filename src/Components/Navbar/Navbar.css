@@ -5,29 +5,26 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    background-image: linear-gradient(20deg, white, var(--orange));
+    background-color: #fff;
     z-index: 1;
     user-select: none;
-}
-
-.left {
-    flex: 1;
-    display: flex;
+    padding-left: 5em;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 2rem;
 }
-
-.left img {
+.navbar .left{
     cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.navbar .left .iconat{
+    font-size: 0.5rem;
+}
 .right {
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 2rem;
+    margin-right: 6rem;
 }
 
 .right ul {
@@ -37,18 +34,16 @@
 }
 
 .right ul li {
-    margin-right: 1rem;
-    font-size: 1.4rem;
-    font-weight: bold;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     letter-spacing: 0.05rem;
-    color: dimgrey;
-}
-
-.right ul li:hover {
+    color: var(--black);
     cursor: pointer;
-    color: black;
 }
-
+.right ul li.active{
+    color: var(--orange);
+}
 .left :nth-child(1) {
     font-size: 1.3rem;
     width: 2.5em;

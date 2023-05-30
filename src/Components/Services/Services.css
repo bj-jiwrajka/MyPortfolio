@@ -11,13 +11,11 @@
     font-size: 3rem;
     color: #fff;
     font-weight: bold;
-    user-select: none;
 }
 .skills .E {
     color: rgb(255, 213, 0);
     font-size: 3rem;
     font-weight: bold;
-    user-select: none;
 }
 .sright
 {
@@ -29,11 +27,12 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    padding-bottom: 2rem;
-    width: 80%;
+    padding: 2rem;
+    width: 75%;
+    background-color:rgb(4, 4, 82);
 }
 .skill-card {
-    width: 8rem;
+    width: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +46,6 @@
 }
 .skill-icon {
     font-size: 3rem;
-    margin-bottom: 10px;
 }
 
 .skill-card h3 {

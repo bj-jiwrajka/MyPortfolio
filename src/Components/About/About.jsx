@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './About.css';
 import Bijay from '../../img/Bijay.jpg';
+import { Icon } from '@iconify/react';
 
 const About = () => {
   const [rotateY, setRotateY] = useState(0);
@@ -15,7 +16,6 @@ const About = () => {
     const mouseY = event.pageY - event.currentTarget.offsetTop;
     const newRotateY = ((mouseX - centerX) / containerWidth) * 20;
     const newRotateX = -((mouseY - centerY) / containerHeight) * 20;
-
     setRotateY(newRotateY);
     setRotateX(newRotateX);
   };
@@ -29,35 +29,50 @@ const About = () => {
     <div className='about' id='About'>
       <div className='about-me'>
         About
-        <span className='me'>Me</span>
+        <span className='me'> Me</span>
       </div>
       <div className='about-container'>
-        <div
-          className="aright"
-          onMouseMove={handleMouseMove}
-          onMouseLeave={resetImageTransform}
-        >
-          <div className="image-container">
-            <img
-              src={Bijay}
-              alt="myphoto"
-              id="bending-image"
-              style={{
-                transform: `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`,
-              }}
-            />
+        <div className="resume-box">
+          <div
+            className="aright"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={resetImageTransform}
+          >
+            <div className="image-container"
+
+            >
+              <img
+                src={Bijay}
+                alt="myphoto"
+                id="bending-image"
+                style={{
+                  transform: `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`,
+                }}
+              />
+            </div>
+          </div>
+          <div className="resume">
+            <a href="https://bit.ly/bj-jiwrajka" target='_blank' rel='noreferrer'>
+              <button className='button'>Get Resume
+              <div className="icon">
+            <Icon icon="fa-brands:get-pocket"  />
+              </div>
+              </button>
+            </a>
           </div>
         </div>
+
+
 
         <div className="aleft">
           <span>
             <span>
-              <h3>I'm Bijay</h3>
+              <h3>I'm Bijay Jiwrajka</h3>
               <h4>Passionate Web Developer | Competitive Programming Enthusiast</h4>
             </span>
             <br />
             <span>
-            A third-year CSE undergraduate student at the National Institute of Technology, Silchar. I have been a part of global communities such as Google Developer Students' Club, NITS, and other societies like the Computer Science Society, NIT Silchar.
+              A third-year CSE undergraduate student at the National Institute of Technology, Silchar. I have been a part of global communities such as Google Developer Students' Club, NITS, and other societies like the Computer Science Society, NIT Silchar.
               <br />
               <br />
               I'm a passionate developer who enjoys tackling challenging problems and crafting engaging websites. Over the years, I've gained valuable experience by working on diverse projects and honed my skills in software development.
@@ -75,7 +90,7 @@ const About = () => {
                 <span>Email</span>: jiwrajkabijay@gmail.com
               </div>
               <div>
-                <span> Place</span>: Mankachar, India
+                <span>Place</span>: Mankachar, India
                 <br />
                 <span>College</span>: National Institute of Technology, Silchar
               </div>

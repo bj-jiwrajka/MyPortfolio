@@ -1,31 +1,38 @@
 .about {
     display: flex;
-    gap: 1rem;
+    padding-top: 4rem;
     flex-direction: column;
-    min-height:100vh;
-    margin-top: 8vh;
+    min-height: 100vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
+
 .about-me {
     font-size: 3rem;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    font-family:  "Italiana", serif;
+    font-family: "Italiana", serif;
 }
-.me{
+
+.me {
     color: var(--orange);
-    margin-left: 0.3em;
 }
- 
+
 .about-container {
     display: flex;
     justify-content: center;
     gap: 10rem;
     align-items: center;
     padding-top: 2rem;
+}
+
+.resume-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .aright {
@@ -51,26 +58,47 @@
 .bending {
     transform: rotateY(var(--rotate-y)) rotateX(var(--rotate-x));
 }
-
+.resume a{
+    text-decoration: none;
+}
+.resume .button {
+    border-radius: 0;
+    box-shadow: 0  0 20px rgba(0, 0, 0, 0.2);
+    background-image:linear-gradient(to right, var(--orange), rgb(0,0,101));
+    text-transform: uppercase;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+.resume .icon{
+   display: flex;
+}
 
 .aleft {
-    width:50vw;
+    width: 50vw;
     font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
 }
-.aleft .about-info{
+
+.aleft .about-info {
     display: flex;
     gap: 2rem;
+    justify-content: space-between;
 }
-.aleft .about-info div{
+
+.aleft .about-info div {
     font-size: 1.1rem;
 }
-.aleft .about-info span{
+
+.aleft .about-info span {
     color: var(--orange);
 }
-.aleft h3,h4{
+
+.aleft h3,
+h4 {
     line-height: 0.2rem;
 }
+
 @media only screen and (max-width:800px) {
     .about {
         margin-left: 3em;

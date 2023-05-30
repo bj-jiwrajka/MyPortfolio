@@ -35,23 +35,37 @@
     font-family: "Poppins", sans-serif;
 }
 
-.buttons {
+.iright {
     display: flex;
+    width: 28rem;
     gap: 2rem;
+    justify-content: center;
 }
 
-.buttons button {
-    font-size: 1rem;
-    font-weight: 100;
+.iright a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    background:linear-gradient(to left, var(--orange), rgb(0, 0, 128));
+    padding: 0 0.5rem;
+    border-radius: 1rem;
     width: 9em;
+    justify-content: center;
+
+}
+.iright a:hover{
+    background:linear-gradient(to left, var(--orange), rgb(0,0,101));
 }
 
-.buttons button:hover {
-    background-color: var(--blue-hover);
-    transition: all 0.3s ease-in-out;
+.iright a .icon-social {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width: 800px) {
     .intro {
         height: 5em;
     }
@@ -67,14 +81,7 @@
     .intro .ileft :nth-child(3) {
         font-size: 1rem;
     }
-
-    .intro .ileft :nth-child(4) button {
-        font-size: 1rem;
-        color: white;
-        font-weight: 100;
-    }
 }
-
 
 @media only screen and (max-width: 500px) {
     .intro {

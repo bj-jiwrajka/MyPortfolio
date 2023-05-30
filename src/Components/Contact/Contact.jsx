@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import ContactLottie from './../../footerLottie/index'
+import ContactLottie from '../../Lotties/footerLottie';
 import Feedback from '../Feedback/Feedback';
 
 const Contact = () => {
