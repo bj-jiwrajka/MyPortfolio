@@ -35,11 +35,12 @@
 .form-group input,
 textarea {
     font-size: 1rem;
-    padding: 0.2em;
+    padding: 1rem;
     resize: none;
     background-color: var(--default-bg);
     width: 20rem;
-    border-color: var(--blue-hover);
+    border: #fff;
+    /* border-color: var(--blue-hover); */
 }
 .capitalise-name input{
     text-transform: capitalize;

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Intro.css';
-import TextLoop from "react-text-loop";
 import Lottie from '../../Lotties/lottie'
 import Scrolldown from '../../Lotties/ScrollDown'
 import { Icon } from '@iconify/react';
@@ -27,12 +26,13 @@ const Intro = () => {
                 <div className="ileft">
                     <span className='intro-bijay'>Hey! I am Bijay </span>
                     <p>I'm into <span> </span>
-                        <TextLoop>
+                    <span className='moving-text'> Full Stack Development</span>
+                        {/* <TextLoop>
                             <span className='moving-text'> Full Stack Development</span>
                             <span className='moving-text'> Competitive Programming</span>
                             <span className='moving-text'> Tech Communities</span>
 
-                        </TextLoop>
+                        </TextLoop> */}
                     </p>
                     <span>
                         Coder by day, software engineer by night. Working with web development and competitive programming to bring out the best in technology. I am deep diving more into the field of software development and trying to be better with passing time
