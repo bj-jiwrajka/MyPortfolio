@@ -124,15 +124,16 @@
 
 @media screen and (max-width:600px) {
     .intro {
-        margin-left: 1.2rem;
+        margin-left: 1rem;
     }
 
     .ileft .intro-bijay {
         font-size: 3rem;
+        margin-top: -6rem;
     }
 
     .ileft :nth-child(2) {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         color: var(--black);
     }
@@ -151,44 +152,8 @@
     .iright {
         display: none;
     }
-
-    .intro .ileft .dynamic-txts {
-        margin-left: -2rem;
-        height: 90px;
-        line-height: 90px;
-        overflow: hidden;
-    }
-
     .intro .ileft .dynamic-txts li {
-        list-style: none;
-        color: var(--orange);
-        font-size: 1.2rem;
-        font-weight: 400;
-        position: relative;
-        top: 0;
-        animation: slide 12s steps(4) infinite;
-    }
-
-    @keyframes slide {
-        100% {
-            top: -360px;
-        }
-    }
-
-    .intro .ileft .dynamic-txts li span {
-        position: relative;
-    }
-
-    .intro .ileft .dynamic-txts li span::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        height: 85%;
-        width: 100%;
-        top: 16%;
-        background: var(--default-bg);
-        border-left: 2px solid var(--orange);
-        animation: typing 3s steps(10) infinite;
+        font-size: 1.5rem;
     }
 
     @keyframes typing {

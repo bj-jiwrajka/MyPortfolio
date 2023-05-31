@@ -3,6 +3,7 @@
     position: absolute;
     left: 50%;
     top: 44%;
+    user-select: none;
     cursor: pointer;
 }
 @media screen and (max-width: 759px) {
