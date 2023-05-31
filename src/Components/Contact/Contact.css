@@ -38,9 +38,8 @@ textarea {
     padding: 1rem;
     resize: none;
     background-color: var(--default-bg);
-    width: 20rem;
+    width:90%;
     border: #fff;
-    /* border-color: var(--blue-hover); */
 }
 .capitalise-name input{
     text-transform: capitalize;
@@ -55,38 +54,32 @@ button[type="submit"]:hover {
     transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:600px) {
     .contact {
         display: flex;
         flex-direction: column;
-        margin-left: 1em;
+        margin-left: 1rem;
     }
 
     .cleft {
-        margin-bottom: 2em;
+        margin-bottom: 0em;
     }
 
     .container {
-        width: 14em;
+        width: 80%;
         justify-content: center;
         margin: auto;
+        padding: 0;
     }
 
     .container .form-group {
-        margin-bottom: 10px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1.2rem;
     }
-}
-
-@media screen and (max-width:500px) {
-
-    .contact {
-        margin-left: 0em;
+    .cleft, .cleft span{
+        font-size: 2rem;
+        margin-top: 2rem;
     }
-
-    .cleft :nth-child(1),
-    .cleft :nth-child(2) {
-        margin-left: 1em;
-    }
-
 
 }

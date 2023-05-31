@@ -1,23 +1,12 @@
 #headLottie{
-    width: 80px;
+    width: 60px;
     position: absolute;
     left: 50%;
-    top: 37%;
+    top: 44%;
     cursor: pointer;
-}
-
-@media screen and (max-width: 1160px) {
-    #headLottie{
-        width: 300px;
-    }
-}
-@media screen and (max-width: 1000px) {
-    #headLottie{
-        width: 260px;
-    }
 }
 @media screen and (max-width: 759px) {
     #headLottie{
-    display: none;
+    left: 42%;
     }
 }

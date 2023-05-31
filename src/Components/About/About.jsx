@@ -77,12 +77,11 @@ const About = () => {
               <br />
               I'm a passionate developer who enjoys tackling challenging problems and crafting engaging websites. Over the years, I've gained valuable experience by working on diverse projects and honed my skills in software development.
               <br />
-              <br />
+             
+              <p className='mbl_hide'>
               My dedication to continuous learning has allowed me to stay up-to-date with the latest technologies and industry trends. I thrive in collaborative environments and have a strong commitment to delivering high-quality results.
+              </p>
             </span>
-
-            <br />
-            <br />
             <div className='about-info'>
               <div>
                 <span>Age</span>: 21

@@ -9,7 +9,7 @@ const Services = () => {
         Expertise &
         <span className='E'> Aptitudes</span>
       </div>
-      <div className='sright'>
+      <div className='sright'> 
         <div className="skills_cards">
           <SkillCard skill="HTML5" icon="logos:html-5" />
           <SkillCard skill="CSS3" icon="logos:css-3" />

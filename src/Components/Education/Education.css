@@ -28,12 +28,14 @@
 .education-container p {
     font-size: 1.2rem;
 }
-.education-container .inverted{
+
+.education-container .inverted {
     color: var(--orange);
     font-size: 2rem;
     font-family: "Poppins", serif;
     font-weight: 500;
 }
+
 .education-container .nits {
     display: flex;
     width: 60rem;
@@ -63,4 +65,53 @@
 
 .education-container .nits .clginfo p {
     font-size: 1.2rem;
+}
+
+@media screen and (max-width:600px) {
+    .education {
+        padding-top: 2rem;
+    }
+
+    .about-me {
+        font-size: 2rem;
+    }
+
+    .education-container {
+        gap: 2rem;
+    }
+
+    .education-container p {
+        font-size: 1rem;
+        padding: 2rem;
+    }
+
+    .education-container .inverted {
+        display: none;
+    }
+
+    .education-container .nits {
+        flex-direction: column;
+        width: 80%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .education-container .nits .clg {
+        width: 80%;
+        margin: auto;
+    }
+
+    .education-container .nits .clginfo a {
+        font-size: 1rem;
+    }
+
+    .education-container .nits .clginfo h3 {
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+
+    .education-container .nits .clginfo p {
+        font-size: 1.2rem;
+        padding: 0;
+    }
 }

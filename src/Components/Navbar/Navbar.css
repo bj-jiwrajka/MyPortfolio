@@ -59,10 +59,14 @@
     display: none;
 }
 
-@media only screen and (max-width: 800px) {
-
+@media only screen and (max-width: 600px) {
+    .navbar{
+        background: transparent;
+    }
     .hamburger-menu {
-        cursor: pointer;display:flex;
+        cursor: pointer;
+        display:flex;
+        margin-right: 2rem;
      
     }
     .hamburger-menu-2{
@@ -71,7 +75,9 @@
         top: 5%;
         cursor: pointer;
     }
-
+    .navbar .left{
+        display: none;
+    }
     .right ul {
         display: none;
     }

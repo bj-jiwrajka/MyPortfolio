@@ -7,33 +7,33 @@ const Intro = () => {
     const scrollDown = () => {
         const scrollStep = window.innerHeight / 80;
         let scrollPosition = 0;
-      
+
         const scrollToPosition = () => {
-          if (scrollPosition < window.innerHeight) {
-            scrollPosition += scrollStep;
-            window.scrollTo(0, scrollPosition);
-            window.requestAnimationFrame(scrollToPosition);
-          }
+            if (scrollPosition < window.innerHeight) {
+                scrollPosition += scrollStep;
+                window.scrollTo(0, scrollPosition);
+                window.requestAnimationFrame(scrollToPosition);
+            }
         };
-      
+
         window.requestAnimationFrame(scrollToPosition);
-      };
-      
-      
+    };
+
+
     return (
         <>
             <div className="intro" id='Home'>
                 <div className="ileft">
-                    <span className='intro-bijay'>Hey! I am Bijay </span>
-                    <p>I'm into <span> </span>
-                    <span className='moving-text'> Full Stack Development</span>
-                        {/* <TextLoop>
-                            <span className='moving-text'> Full Stack Development</span>
-                            <span className='moving-text'> Competitive Programming</span>
-                            <span className='moving-text'> Tech Communities</span>
+                    <div className='intro-bijay'>Hey! I am Bijay </div>
+                    <div className="mvng-txt">
+                        <p>I'm into</p>
 
-                        </TextLoop> */}
-                    </p>
+                            <ul className='dynamic-txts'>
+                                <li><span>Full Stack Development</span></li>
+                                <li><span>Competitive Programming</span></li>
+                                <li><span>Tech Communities</span></li>
+                            </ul>
+                    </div>
                     <span>
                         Coder by day, software engineer by night. Working with web development and competitive programming to bring out the best in technology. I am deep diving more into the field of software development and trying to be better with passing time
                     </span>
@@ -69,10 +69,10 @@ const Intro = () => {
                     </a>
 
                 </div>
-            </div>
+            </div >
             <Lottie />
             <div onClick={scrollDown}>
-            <Scrolldown/>
+                <Scrolldown />
             </div>
         </>
 

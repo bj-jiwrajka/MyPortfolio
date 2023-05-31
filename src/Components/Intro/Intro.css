@@ -49,15 +49,16 @@
     color: #fff;
     gap: 0.5rem;
     font-size: 1.2rem;
-    background:linear-gradient(to left, var(--orange), rgb(0, 0, 128));
+    background: linear-gradient(to left, var(--orange), rgb(0, 0, 128));
     padding: 0 0.5rem;
     border-radius: 1rem;
     width: 9em;
     justify-content: center;
 
 }
-.iright a:hover{
-    background:linear-gradient(to left, var(--orange), rgb(0,0,101));
+
+.iright a:hover {
+    background: linear-gradient(to left, var(--orange), rgb(0, 0, 101));
 }
 
 .iright a .icon-social {
@@ -65,35 +66,146 @@
     margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 800px) {
+.intro .ileft .dynamic-txts {
+    margin-left: -2rem;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.intro .ileft .dynamic-txts li {
+    list-style: none;
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.intro .ileft .dynamic-txts li span {
+    position: relative;
+}
+
+.intro .ileft .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 85%;
+    width: 100%;
+    top: 16%;
+    background: var(--default-bg);
+    border-left: 2px solid var(--orange);
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 10px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.intro .ileft .mvng-txt {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
     .intro {
-        height: 5em;
+        margin-left: 1.2rem;
     }
 
-    .intro .ileft :nth-child(1) {
-        font-size: 2rem;
+    .ileft .intro-bijay {
+        font-size: 3rem;
     }
 
-    .intro .ileft :nth-child(2) {
-        font-size: 2rem;
+    .ileft :nth-child(2) {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--black);
+    }
+
+    .ileft .moving-text {
+        font-size: 0.6rem;
+        color: var(--orange);
     }
 
     .intro .ileft :nth-child(3) {
         font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .intro {
-        height: 6em;
+        width: 90%;
+        font-family: "Poppins", sans-serif;
     }
 
-    .intro .ileft {
-        margin-left: 1em;
+    .iright {
+        display: none;
     }
 
-    .intro .ileft :nth-child(3) {
-        width: 80vw;
-        margin-right: 1em;
+    .intro .ileft .dynamic-txts {
+        margin-left: -2rem;
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
     }
+
+    .intro .ileft .dynamic-txts li {
+        list-style: none;
+        color: var(--orange);
+        font-size: 1.2rem;
+        font-weight: 400;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -360px;
+        }
+    }
+
+    .intro .ileft .dynamic-txts li span {
+        position: relative;
+    }
+
+    .intro .ileft .dynamic-txts li span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 85%;
+        width: 100%;
+        top: 16%;
+        background: var(--default-bg);
+        border-left: 2px solid var(--orange);
+        animation: typing 3s steps(10) infinite;
+    }
+
+    @keyframes typing {
+
+        40%,
+        60% {
+            left: calc(100% + 10px);
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
+    .intro .ileft .mvng-txt {
+        display: flex;
+        align-items: center;
+    }
+
 }
