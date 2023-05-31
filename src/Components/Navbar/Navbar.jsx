@@ -9,12 +9,12 @@ function Navbar() {
   return (
     <div>
       <div className="navbar">
-      <Link to="Home">
+        <Link to="Home">
 
-        <div className="left">
+          <div className="left">
             <Icon icon="mingcute:at-fill" className='iconat' />
             <h5>BJ_JIWRAJKA</h5>
-        </div>
+          </div>
         </Link>
 
         <div

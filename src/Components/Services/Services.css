@@ -74,10 +74,11 @@
 
     .skills_cards {
         gap: 1rem;
+        padding: 2rem 1rem;
     }
 
     .skill-card {
         width: 6.5rem;
-        padding: 10px;
+        padding: 0.8rem;
     }
 }

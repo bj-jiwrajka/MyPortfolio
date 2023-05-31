@@ -40,10 +40,12 @@
     transform-style: preserve-3d;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 #bending-image {
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     aspect-ratio: 1;
     border-radius: 50%;

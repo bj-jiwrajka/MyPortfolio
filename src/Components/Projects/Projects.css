@@ -62,8 +62,8 @@
 
 @media screen and (max-width:600px) {
     .projects {
-        display: flex;
         padding: 2rem;
+        justify-content: center;
     }
 
     .project-title {
@@ -72,36 +72,17 @@
     }
 
     .project-content {
-        gap: 4rem;
-        padding: 2rem 0.8rem;
+        padding: 1rem;
         width: 100%;
+        gap: 1rem;
     }
     .project-content .backend-projects {
-        gap: 2rem;
+        gap: 1rem;
         flex-direction: column;
     }
 
 
     .project-content .project-icons {
         display: none;
-        width: 22rem;
-        height: 20rem;
-        overflow-y: auto;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        scrollbar-width: thin;
-        scrollbar-color: black transparent;
-    }
-
-    .project-content .project-icons::-webkit-scrollbar {
-        width: 0.1rem;
-        background-color: transparent;
-    }
-
-    .project-content .project-icons::-webkit-scrollbar-thumb {
-        background-color: black;
-        border-left: none;
-        border-right: none;
     }
 }

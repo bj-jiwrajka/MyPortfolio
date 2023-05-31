@@ -10,13 +10,10 @@
         width: 300px;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
     #headLottie{
         width: 260px;
-    }
-}
-@media screen and (max-width: 759px) {
-    #headLottie{
-    display: none;
+        left: calc(50% - 130px);
+        top: calc(50% - 130px);
     }
 }

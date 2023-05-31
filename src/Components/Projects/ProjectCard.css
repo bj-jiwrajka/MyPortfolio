@@ -36,8 +36,9 @@
 @media screen and (max-width:600px) {
   .project-card {
     padding: 1rem;
-    width: 85%;
+    width: 86%;
     height: 100%;
+    margin: auto;
   }
 
   .project-actions {

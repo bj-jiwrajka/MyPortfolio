@@ -35,7 +35,8 @@ const Intro = () => {
                             </ul>
                     </div>
                     <span>
-                        Coder by day, software engineer by night. Working with web development and competitive programming to bring out the best in technology. I am deep diving more into the field of software development and trying to be better with passing time
+                        Coder by day, software engineer by night. Working with web development and competitive programming to bring out the best in technology. 
+                        <p className='mbl_hide'>I am deep diving more into the field of software development and trying to be better with passing time</p>
                     </span>
                 </div>
                 <div className="iright">
