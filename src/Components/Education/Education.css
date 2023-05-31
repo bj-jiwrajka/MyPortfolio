@@ -98,8 +98,9 @@
     }
 
     .education-container .nits .clg {
-        width: 80%;
+        width: 60%;
         margin: auto;
+        padding: 0;
     }
 
     .education-container .nits .clginfo a {

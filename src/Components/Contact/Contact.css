@@ -57,8 +57,10 @@ button[type="submit"]:hover {
 @media only screen and (max-width:600px) {
     .contact {
         display: flex;
-        margin-left: 1rem;
+        margin-left: 0;
         justify-content:flex-start;
+        min-height: 0;
+        margin-bottom: 2rem;
     }
 
     .cleft {
@@ -66,10 +68,10 @@ button[type="submit"]:hover {
     }
 
     .container {
-        width: 80%;
+        width: 90%;
         justify-content: center;
-        /* margin: auto; */
-        padding: 0;
+        height: 100%;
+        padding: 2rem 0;
     }
 
     .container .form-group {

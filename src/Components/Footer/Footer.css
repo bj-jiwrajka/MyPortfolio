@@ -1,8 +1,8 @@
 .footer {
     padding: 1em 0;
-    color:var(--footer-text);
+    color: var(--footer-text);
     user-select: none;
-    /* background: linear-gradient(180deg, var(--orange) 0%, rgba(33, 150, 243, 0.644) 100%); */
+    background: linear-gradient(to left, var(--orange), rgb(0, 0, 101));
 }
 
 .footer-container {
@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .fleft1 ul {
     display: flex;
     flex-direction: column;
@@ -30,7 +31,7 @@
 
 .fleft1 ul li a {
     letter-spacing: 0.05rem;
-    color:var(--footer-text);
+    color: var(--footer-text);
     text-decoration: none;
 }
 
@@ -40,7 +41,7 @@
     align-items: center;
     cursor: pointer;
     justify-content: center;
-    
+
 }
 
 .fleft3 ul {
@@ -49,23 +50,27 @@
     letter-spacing: 0.09rem;
     line-height: 1.3em;
 }
-.fleft3 ul  :hover, .fleft1 ul :hover{
+
+.fleft3 ul :hover,
+.fleft1 ul :hover {
     color: rgb(165, 165, 165);
     color: var(--footer-text-hover);
 }
+
 .fright2 {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.5rem;
     gap: 0.4em;
 }
-.fright2 a{
-    color:var(--footer-text);
+
+.fright2 a {
+    color: var(--footer-text);
 }
 
-.fright2 :hover{
+.fright2 :hover {
     color: var(--footer-text-hover);
 
 }
@@ -78,16 +83,21 @@
 }
 
 @media screen and (max-width: 683px) {
-   .footer-container{
-    flex-direction: column;
-   }
-   .fleft1, .fleft3{
-    margin-left: -1.5em;
-   }
-   .fleft3{
-    font-size: 0.8em;
-   }
-   .fleft1{
-font-size: 0.8em;
-   }
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .fleft1,
+    .fleft3 {
+        margin-left: -2rem;
+    }
+
+    .fleft3 {
+        font-size: 0.8em;
+    }
+
+    .fleft1 {
+        font-size: 0.8em;
+    }
 }
