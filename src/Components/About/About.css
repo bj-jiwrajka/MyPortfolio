@@ -15,7 +15,7 @@
 .about-container {
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 1rem;
     align-items: center;
     padding-top: 2rem;
 }

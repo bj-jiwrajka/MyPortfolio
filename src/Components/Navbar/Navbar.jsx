@@ -22,28 +22,34 @@ function Navbar() {
           style={{ sticky: true }}
         >
           <ul>
-            <Link spy={true} to="Home" smooth={true} activeClass="activeClass" onSetActive={() => setactiveSection('Home')
-            }>
+            <Link spy={true} to="Home" smooth={true} activeClass="activeClass" onClick={
+              () => setShowLinks(!showLinks)
+            } onSetActive={() => setactiveSection('Home')}>
               <li className={activeSection === 'Home' ? 'active' : ''}>Home</li>
             </Link>
-            <Link spy={true} to="About" smooth={true} onSetActive={
+            <Link spy={true} to="About" smooth={true} onClick={
+              () => setShowLinks(!showLinks)} onSetActive={
               () => setactiveSection('About')
             }>
               <li className={activeSection === 'About' ? 'active' : ''}>About</li>
             </Link>
-            <Link spy={true} to="Services" smooth={true} onSetActive={
+            <Link spy={true} to="Services" smooth={true}  onClick={
+              () => setShowLinks(!showLinks)}  onSetActive={
               () => setactiveSection('Services')}>
               <li className={activeSection === 'Services' ? 'active' : ''}>Skills</li>
             </Link>
-            <Link spy={true} to="Education" smooth={true} onSetActive={
+            <Link spy={true} to="Education" smooth={true}  onClick={
+              () => setShowLinks(!showLinks)}  onSetActive={
               () => setactiveSection('Education')}>
               <li className={activeSection === 'Education' ? 'active' : ''}>Education</li>
             </Link>
-            <Link spy={true} to="Projects" smooth={true} onSetActive={
+            <Link spy={true} to="Projects" smooth={true}  onClick={
+              () => setShowLinks(!showLinks)}  onSetActive={
               () => setactiveSection('Projects')}>
               <li className={activeSection === 'Projects' ? 'active' : ''}>Projects</li>
             </Link>
-            <Link spy={true} to="Contact" smooth={true} onSetActive={
+            <Link spy={true} to="Contact" smooth={true}  onClick={
+              () => setShowLinks(!showLinks)}  onSetActive={
               () => setactiveSection('Contact')}>
               <li className={activeSection === 'Contact' ? 'active' : ''}>Contact</li>
             </Link>
