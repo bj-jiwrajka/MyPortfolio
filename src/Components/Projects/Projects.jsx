@@ -55,7 +55,7 @@ const Projects = () => {
                     </div>
                     <div className="backend-projects">
                         <ProjectCard name={"My Weather Website"} img={Project1} desc={"An API based weather application"} link={"https://bj-jiwrajka.github.io/first_weather_website"} />
-                        <ProjectCard name={"My Online Meal"} img={OnlineMeal} desc={"An online meal ordering website where users can order delicious meals"} />
+                        <ProjectCard name={"My Online Meal"} img={OnlineMeal} desc={"An online meal ordering website where users can order delicious meals"} link={"https://bj-jiwrajka.github.io/first_food_website/"}  />
                     </div>
                 </div>
             </div>

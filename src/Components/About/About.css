@@ -45,7 +45,7 @@
 }
 
 #bending-image {
-    width: 80%;
+    width: 50%;
     object-fit: cover;
     aspect-ratio: 1;
     border-radius: 50%;
