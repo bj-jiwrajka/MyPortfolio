@@ -17,7 +17,7 @@ const Contact = () => {
        Get in <span>Touch</span>
       </div>
       <div className="container">
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={handleFormSubmit} action='https://getform.io/f/e0274019-a68a-46d6-a876-dc800c3934b7' method='POST'>
           <div className="form-group capitalise-name">
             <label htmlFor="name"></label>
             <input type="text" id="name" name="name" required  placeholder='Name:'/>
