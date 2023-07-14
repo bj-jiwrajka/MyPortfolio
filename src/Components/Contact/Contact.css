@@ -21,13 +21,13 @@
 .container {
     width: 60rem;
     display: flex;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color:var(--skill-bg-card);
     text-align: center;
     height: 30rem;
     align-items: center;
     padding-left: 3rem;
 }
+
 
 .container .form-group {
     margin-bottom: 1.2em;
@@ -39,7 +39,7 @@ textarea {
     resize: none;
     background-color: var(--default-bg);
     width:90%;
-    border: #fff;
+    border:none;
 }
 .capitalise-name input{
     text-transform: capitalize;

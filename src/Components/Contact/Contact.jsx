@@ -3,7 +3,7 @@ import './Contact.css';
 import ContactLottie from '../../Lotties/footerLottie';
 import Feedback from '../Feedback/Feedback';
 
-const Contact = () => {
+const Contact = ({darkmode}) => {
   const [showFeedback, setShowFeedback] = useState(false);
 
   const handleFormSubmit = (event) => {
@@ -13,6 +13,8 @@ const Contact = () => {
 
   return (
     <div className="contact" id="Contact">
+      <div className={`${darkmode ? 'about-line' : ''}`}>
+      </div>
       <div className="cleft">
        Get in <span>Touch</span>
       </div>

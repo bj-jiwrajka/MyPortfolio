@@ -2,7 +2,7 @@ import React from 'react';
 import './Services.css';
 import SkillCard from './SkillCard';
 
-const Services = (darkmode) => {
+const Services = ({darkmode}) => {
   return (
     <div className="skills" id='Services'>
        <div className={`${darkmode ? 'about-line' : ''}`}>

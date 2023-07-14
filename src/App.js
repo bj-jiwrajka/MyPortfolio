@@ -19,9 +19,9 @@ function App() {
       <Intro />
       <About darkmode={darkMode}/>
       <Services darkmode={darkMode}/>
-      <Education darkMode={darkMode} />
+      <Education darkmode={darkMode} />
       <Projects darkmode={darkMode} />
-      <Contact darkMode={darkMode} />
+      <Contact darkmode={darkMode} />
       {/* <Footer/> */}
 
     </div>

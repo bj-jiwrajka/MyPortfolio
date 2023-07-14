@@ -58,10 +58,12 @@
   border-radius: 2rem;
   font-size: 16px;
   border: none;
-  color: var(--black);
   background: var(--button);
   padding: 11px 26px;
   cursor: pointer;
+  color: #fff;
+  font-weight: 550;
+  font-family: Popins;
 }
 .button:hover {
   transition: all 0.3s ease-in-out;
