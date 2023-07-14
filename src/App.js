@@ -9,7 +9,7 @@ import Contact from "./Components/Contact/Contact";
 import { useState } from "react";
 import './App.css';
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };

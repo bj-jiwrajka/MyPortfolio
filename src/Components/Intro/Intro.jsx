@@ -5,7 +5,7 @@ import Scrolldown from '../../Lotties/ScrollDown'
 import { Icon } from '@iconify/react';
 const Intro = () => {
     const scrollDown = () => {
-        const scrollStep = window.innerHeight / 80;
+        const scrollStep = window.innerHeight / 60;
         let scrollPosition = 0;
 
         const scrollToPosition = () => {

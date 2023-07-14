@@ -1,5 +1,5 @@
 .navbar {
-    height: 3rem;
+    height: 3.5rem;
     display: flex;
     width: 100vw;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     user-select: none;
     padding-left: 5em;
     align-items: center;
-    background-color: var(--default-bg);
+    background-color: var(--theme-color);
 }
 
 .navbar .left{
@@ -25,7 +25,18 @@
     font-family: "Poppins", sans-serif;
     color: var(--orange);
 }
-
+.navbar .left .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbar .left .icon-container .dark-icon{
+   font-size: 2rem;
+}
 
 .right {
     display: flex;

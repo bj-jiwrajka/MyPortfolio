@@ -31,8 +31,8 @@ const Projects = ({darkmode}) => {
 
                     </div>
                     <div className="backend-projects">
-                        <ProjectCard name={"GRAFINY"} img={Project3} desc={"It allows you to share and view notes,assignments and other educational resources"} />
-                        <ProjectCard name={"CSS Website"} img={Project2} link={"https://nits-css.live"} desc={"It is the official website of Computer Science Society, NIT Silchar"} />
+                        <ProjectCard name={"GRAFINY"} img={Project3} desc={"It allows you to share and view notes,assignments and other educational resources"} github={"https://github.com/gdsc-nits-org/grafiny-client"} />
+                        <ProjectCard name={"CSS Website"} img={Project2} link={"https://nits-css.live"} desc={"It is the official website of Computer Science Society, NIT Silchar"} github={"https://github.com/ComputerScienceSoceityNITS/CSSWebsite"} />
                     </div>
                 </div>
                 <div className="backend-icons">
@@ -43,8 +43,8 @@ const Projects = ({darkmode}) => {
                         <SkillCard skill="JavaScript" icon="logos:javascript" />
                     </div>
                     <div className="backend-projects">
-                        <ProjectCard name={"Oikyotaan Website"} img={Oikyotaan} desc={`It is the official website of Bengali new year fest of our college - "Oikyotaan"`} link={"https://oikyotaan2023.in/"} />
-                        <ProjectCard name={"Personal Portfolio"} img={Portfolio} desc={"This is my personal portfolio showcasing my projects and skills."} link={"https://bjiwrajka.vercel.app"} />
+                        <ProjectCard name={"Oikyotaan Website"} img={Oikyotaan} desc={`It is the official website of Bengali new year fest of our college - "Oikyotaan"`} link={"https://oikyotaan2023.in/"} github={"https://github.com/gdsc-nits-org/oikyotaan-2023"} />
+                        <ProjectCard name={"Personal Portfolio"} img={Portfolio} desc={"This is my personal portfolio showcasing my projects and skills."} link={"https://bjiwrajka.vercel.app"} github={"https://github.com/bj-jiwrajka/MyPortfolio"} />
                     </div>
                 </div>
                 <div className="backend-icons">
@@ -56,8 +56,8 @@ const Projects = ({darkmode}) => {
 
                     </div>
                     <div className="backend-projects">
-                        <ProjectCard name={"My Weather Website"} img={Project1} desc={"An API based weather application"} link={"https://bj-jiwrajka.github.io/first_weather_website"} />
-                        <ProjectCard name={"My Online Meal"} img={OnlineMeal} desc={"An online meal ordering website where users can order delicious meals"} link={"https://bj-jiwrajka.github.io/first_food_website/"} />
+                        <ProjectCard name={"My Weather Website"} img={Project1} desc={"An API based weather application"} link={"https://bj-jiwrajka.github.io/first_weather_website"} github={"https://github.com/bj-jiwrajka/first_weather_website"}/>
+                        <ProjectCard name={"My Online Meal"} img={OnlineMeal} desc={"An online meal ordering website where users can order delicious meals"} link={"https://bj-jiwrajka.github.io/first_food_website/"} github={"https://github.com/bj-jiwrajka/first_food_website"} />
                     </div>
                 </div>
             </div>

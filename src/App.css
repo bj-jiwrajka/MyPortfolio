@@ -12,6 +12,7 @@
   --skill-main-bg:rgb(0, 0, 101);
   --skill-bg:rgb(4, 4, 82);
   --skill-bg-card:#fff;
+  --project-card-border:#000;
 
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
   --footer-text: #fff;
@@ -24,21 +25,20 @@
 /* Dark Mode Variables */
 :root .dark-mode {
   --orange: #5038a5;
-  --light-blue-contact: #002449;
   --blue-hover: rgb(0, 0, 101);
   --black: #fff;
 
   --skill-main-bg:#000000;
   --skill-bg:#0c0618;
   --skill-bg-card:#0c0618;
+  --project-card-border:#5038a5;
 
   
   --theme-color: #000000;
   --opposite-theme-color: #fff;
   
   --boxShadow: 0px 19px 60px rgb(255 255 255 / 8%);
-  --footer-text: #000;
-  --footer-text-hover: #111;
+
 
   --default-bg: #000000;
 
@@ -59,7 +59,7 @@
   font-size: 16px;
   border: none;
   background: var(--button);
-  padding: 11px 26px;
+  padding: 0.4rem 1rem;
   cursor: pointer;
   color: #fff;
   font-weight: 550;

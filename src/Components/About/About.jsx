@@ -71,7 +71,6 @@ const About = ({ darkmode }) => {
               <h3>I'm Bijay Jiwrajka</h3>
               <h4>Passionate Web Developer | Competitive Programming Enthusiast</h4>
             </span>
-            <br />
             <span>
               A third-year CSE undergraduate student at the National Institute of Technology, Silchar. I have been a part of global communities such as Google Developer Students' Club, NITS, and other societies like the Computer Science Society, NIT Silchar.
               <br />

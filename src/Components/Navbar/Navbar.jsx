@@ -10,8 +10,8 @@ function Navbar({ darkMode, toggleDarkMode }) {
     <div>
       <div className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
         <div className='left'>
-          <div className={`portfolio ${darkMode ? 'dark-mode' : ''}`}>
-            <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
+          <div className='icon-container'>
+              <Icon  onClick={toggleDarkMode}className='dark-icon' icon={darkMode ? 'humbleicons:sun' : 'humbleicons:moon'} />
           </div>
           <a href="https://linktr.ee/bj_jiwrajka" target='_blank' rel='noreferrer'>CONNECT</a>
         </div>

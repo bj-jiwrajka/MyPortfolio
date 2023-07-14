@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .project-card {
-  border: 1px solid #ccc;
+  border: 1px solid var(--project-card-border);
   border-radius: 4px;
   padding: 1rem;
   width: 25rem;
@@ -21,8 +21,22 @@
 
 .project-actions {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
+}
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-actions .project-links .github-link
+{
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  color: var(--opposite-theme-color);
 }
 .desc {
   font-size: 1rem;

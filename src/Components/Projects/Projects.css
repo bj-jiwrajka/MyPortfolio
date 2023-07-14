@@ -52,7 +52,7 @@
 }
 
 .project-content .project-icons::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: var(--opposite-theme-color);
     border-left: none;
     border-right: none;
 }

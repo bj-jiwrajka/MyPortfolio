@@ -1,10 +1,11 @@
 .about {
     display: flex;
-    padding-top: 4rem;
+    padding-top: 6rem;
     flex-direction: column;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     align-items: center;
     padding-bottom: 4rem;
+    /* min-height: 100vh; */
 }
 
 .me {
@@ -15,13 +16,13 @@
     height: 2px;
     width: 80%;
     background-color: var(--orange);
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-container {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 8rem;
     align-items: center;
     padding-top: 1rem;
 }
