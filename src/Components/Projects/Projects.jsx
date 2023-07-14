@@ -8,9 +8,11 @@ import Oikyotaan from '../../img/Oikyotaan.png'
 import OnlineMeal from '../../img/OnlineMeal.png';
 import ProjectCard from './ProjectCard';
 import Portfolio from '../../img/Portfolio.png';
-const Projects = () => {
+const Projects = ({darkmode}) => {
     return (
         <div className='projects' id='Projects'>
+            <div className={`${darkmode ? 'about-line' : ''}`}>
+            </div>
             <div className='project-title'>
                 Projects I've<span className='me'> Worked In</span>
             </div>
@@ -29,7 +31,7 @@ const Projects = () => {
 
                     </div>
                     <div className="backend-projects">
-                        <ProjectCard name={"GRAFINY"} img={Project3} desc={"WIP"} />
+                        <ProjectCard name={"GRAFINY"} img={Project3} desc={"It allows you to share and view notes,assignments and other educational resources"} />
                         <ProjectCard name={"CSS Website"} img={Project2} link={"https://nits-css.live"} desc={"It is the official website of Computer Science Society, NIT Silchar"} />
                     </div>
                 </div>
@@ -55,12 +57,12 @@ const Projects = () => {
                     </div>
                     <div className="backend-projects">
                         <ProjectCard name={"My Weather Website"} img={Project1} desc={"An API based weather application"} link={"https://bj-jiwrajka.github.io/first_weather_website"} />
-                        <ProjectCard name={"My Online Meal"} img={OnlineMeal} desc={"An online meal ordering website where users can order delicious meals"} link={"https://bj-jiwrajka.github.io/first_food_website/"}  />
+                        <ProjectCard name={"My Online Meal"} img={OnlineMeal} desc={"An online meal ordering website where users can order delicious meals"} link={"https://bj-jiwrajka.github.io/first_food_website/"} />
                     </div>
                 </div>
             </div>
         </div>
     )
-} 
+}
 
 export default Projects;

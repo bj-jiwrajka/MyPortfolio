@@ -3,19 +3,18 @@ import './Navbar.css';
 import { Link } from 'react-scroll';
 import { Icon } from '@iconify/react';
 
-function Navbar() {
+function Navbar({ darkMode, toggleDarkMode }) {
   const [showLinks, setShowLinks] = useState(false);
   const [activeSection, setactiveSection] = useState(' ');
   return (
     <div>
-      <div className="navbar">
-        <Link to="Home">
-
-          <div className="left">
-            <Icon icon="mingcute:at-fill" className='iconat' />
-            <h5>BJ_JIWRAJKA</h5>
+      <div className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
+        <div className='left'>
+          <div className={`portfolio ${darkMode ? 'dark-mode' : ''}`}>
+            <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
           </div>
-        </Link>
+          <a href="https://linktr.ee/bj_jiwrajka" target='_blank' rel='noreferrer'>CONNECT</a>
+        </div>
 
         <div
           className={showLinks ? 'mobile-navbar right' : 'right'}
@@ -29,28 +28,28 @@ function Navbar() {
             </Link>
             <Link spy={true} to="About" smooth={true} onClick={
               () => setShowLinks(!showLinks)} onSetActive={
-              () => setactiveSection('About')
-            }>
+                () => setactiveSection('About')
+              }>
               <li className={activeSection === 'About' ? 'active' : ''}>About</li>
             </Link>
-            <Link spy={true} to="Services" smooth={true}  onClick={
-              () => setShowLinks(!showLinks)}  onSetActive={
-              () => setactiveSection('Services')}>
+            <Link spy={true} to="Services" smooth={true} onClick={
+              () => setShowLinks(!showLinks)} onSetActive={
+                () => setactiveSection('Services')}>
               <li className={activeSection === 'Services' ? 'active' : ''}>Skills</li>
             </Link>
-            <Link spy={true} to="Education" smooth={true}  onClick={
-              () => setShowLinks(!showLinks)}  onSetActive={
-              () => setactiveSection('Education')}>
+            <Link spy={true} to="Education" smooth={true} onClick={
+              () => setShowLinks(!showLinks)} onSetActive={
+                () => setactiveSection('Education')}>
               <li className={activeSection === 'Education' ? 'active' : ''}>Education</li>
             </Link>
-            <Link spy={true} to="Projects" smooth={true}  onClick={
-              () => setShowLinks(!showLinks)}  onSetActive={
-              () => setactiveSection('Projects')}>
+            <Link spy={true} to="Projects" smooth={true} onClick={
+              () => setShowLinks(!showLinks)} onSetActive={
+                () => setactiveSection('Projects')}>
               <li className={activeSection === 'Projects' ? 'active' : ''}>Projects</li>
             </Link>
-            <Link spy={true} to="Contact" smooth={true}  onClick={
-              () => setShowLinks(!showLinks)}  onSetActive={
-              () => setactiveSection('Contact')}>
+            <Link spy={true} to="Contact" smooth={true} onClick={
+              () => setShowLinks(!showLinks)} onSetActive={
+                () => setactiveSection('Contact')}>
               <li className={activeSection === 'Contact' ? 'active' : ''}>Contact</li>
             </Link>
           </ul>

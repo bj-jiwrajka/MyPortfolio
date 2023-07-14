@@ -4,7 +4,7 @@
     flex-direction: column;
     background-color: var(--default-bg);
     align-items: center;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 
 .about-me {
@@ -30,7 +30,6 @@
 }
 
 .education-container .inverted {
-    color: var(--orange);
     font-size: 2rem;
     font-family: "Poppins", serif;
     font-weight: 500;
@@ -39,23 +38,27 @@
 .education-container .nits {
     display: flex;
     width: 60rem;
-    background-color: #fff;
+    background-color: var(--skill-bg-card);
     gap: 2rem;
     box-shadow: 0 20px 20px rgb(0, 0, 0, 0.1);
 }
 
 .education-container .nits .clg {
-    width: 8rem;
-    padding: 0.5rem;
+    width: 7rem;
+    padding: 0.8rem;
+    aspect-ratio: 1;
 }
 
 .education-container .nits .clg img {
     object-fit: cover;
+    background-color: #fff;
     width: 100%;
 }
 
 .education-container .nits .clginfo a {
     font-size: 1.1rem;
+    color: var(--orange);
+    text-decoration: none;
 }
 
 .education-container .nits .clginfo h3 {
@@ -67,7 +70,7 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .education {
         padding-top: 2rem;
     }

@@ -1,34 +1,77 @@
+/* Light Mode Variables */
 :root {
   --orange: #094298;
   --light-blue-contact: #e6f7ff;
   --blue-hover: rgb(0, 0, 101);
-  --black:#000;
+  --black: #000;
+
+
+  --theme-color: #fff;
+  --opposite-theme-color: #000;
+
+  --skill-main-bg:rgb(0, 0, 101);
+  --skill-bg:rgb(4, 4, 82);
+  --skill-bg-card:#fff;
+
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
   --footer-text: #fff;
   --footer-text-hover: #ececec;
   --default-bg: rgb(239, 244, 246);
+  --button:  linear-gradient(to left, var(--orange), rgb(0, 0, 128));
+  --button-hover:linear-gradient(to left, var(--orange), rgb(0, 0, 101));
 }
 
+/* Dark Mode Variables */
+:root .dark-mode {
+  --orange: #5038a5;
+  --light-blue-contact: #002449;
+  --blue-hover: rgb(0, 0, 101);
+  --black: #fff;
+
+  --skill-main-bg:#000000;
+  --skill-bg:#0c0618;
+  --skill-bg-card:#0c0618;
+
+  
+  --theme-color: #000000;
+  --opposite-theme-color: #fff;
+  
+  --boxShadow: 0px 19px 60px rgb(255 255 255 / 8%);
+  --footer-text: #000;
+  --footer-text-hover: #111;
+
+  --default-bg: #000000;
+
+  --button:linear-gradient(to left,#5000d0, rgb(22, 0, 65));
+  --button-hover:linear-gradient(to left,#3c009c, rgb(15, 0, 44));
+}
+
+/* Light Mode Styles */
 .App {
   overflow: hidden;
-  color: black;
+  color: var(--black);
   padding-left: 3.5rem;
-  background-color: rgb(239, 244, 246);
+  background-color: var(--default-bg);
 }
 
 .button {
-  border-radius: 34px;
+  border-radius: 2rem;
   font-size: 16px;
   border: none;
-  color: white;
-  background-color: var(--orange);
+  color: var(--black);
+  background: var(--button);
   padding: 11px 26px;
   cursor: pointer;
 }
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  background: var(--button-hover);
+}
+
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }

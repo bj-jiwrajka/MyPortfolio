@@ -2,9 +2,11 @@ import React from 'react'
 import './Education.css'
 import cotton from '../../img/cotton.png';
 import nits from '../../img/nits.png';
-const Education = () => {
+const Education = ({darkMode}) => {
     return (
         <div className='education' id='Education'>
+            <div className={`${darkMode ? 'about-line' : ''}`}>
+            </div>
             <div className='about-me'>
                 My<span className='me'> Education</span>
             </div>
@@ -34,5 +36,5 @@ const Education = () => {
         </div>
     )
 }
- 
+
 export default Education

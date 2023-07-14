@@ -22,13 +22,8 @@
 .project-actions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
-.project-actions a .button:hover {
-  background-color: var(--blue-hover);
-  transition: all 0.3s ease-in-out;
-}
-
 .desc {
   font-size: 1rem;
 }

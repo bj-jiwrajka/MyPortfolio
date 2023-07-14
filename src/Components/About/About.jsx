@@ -3,7 +3,7 @@ import './About.css';
 import Bijay from '../../img/Bijay.jpg';
 import { Icon } from '@iconify/react';
 
-const About = () => {
+const About = ({ darkmode }) => {
   const [rotateY, setRotateY] = useState(0);
   const [rotateX, setRotateX] = useState(0);
 
@@ -14,8 +14,8 @@ const About = () => {
     const centerY = containerHeight / 2;
     const mouseX = event.pageX - event.currentTarget.offsetLeft;
     const mouseY = event.pageY - event.currentTarget.offsetTop;
-    const newRotateY = ((mouseX - centerX) / containerWidth) * 20;
-    const newRotateX = -((mouseY - centerY) / containerHeight) * 20;
+    const newRotateY = ((mouseX - centerX) / containerWidth) * 15;
+    const newRotateX = -((mouseY - centerY) / containerHeight) * 15;
     setRotateY(newRotateY);
     setRotateX(newRotateX);
   };
@@ -27,6 +27,8 @@ const About = () => {
 
   return (
     <div className='about' id='About'>
+      <div className={`${darkmode ? 'about-line' : ''}`}>
+      </div>
       <div className='about-me'>
         About
         <span className='me'> Me</span>
@@ -39,7 +41,6 @@ const About = () => {
             onMouseLeave={resetImageTransform}
           >
             <div className="image-container"
-
             >
               <img
                 src={Bijay}
@@ -54,9 +55,9 @@ const About = () => {
           <div className="resume">
             <a href="https://bit.ly/bj-jiwrajka" target='_blank' rel='noreferrer'>
               <button className='button'>Get Resume
-              <div className="icon">
-            <Icon icon="fa-brands:get-pocket"  />
-              </div>
+                <div className="icon">
+                  <Icon icon="fa-brands:get-pocket" />
+                </div>
               </button>
             </a>
           </div>
@@ -77,9 +78,9 @@ const About = () => {
               <br />
               I'm a passionate developer who enjoys tackling challenging problems and crafting engaging websites. Over the years, I've gained valuable experience by working on diverse projects and honed my skills in software development.
               <br />
-             
+
               <p className='mbl_hide'>
-              My dedication to continuous learning has allowed me to stay up-to-date with the latest technologies and industry trends. I thrive in collaborative environments and have a strong commitment to delivering high-quality results.
+                My dedication to continuous learning has allowed me to stay up-to-date with the latest technologies and industry trends. I thrive in collaborative environments and have a strong commitment to delivering high-quality results.
               </p>
             </span>
             <div className='about-info'>

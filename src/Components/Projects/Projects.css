@@ -1,17 +1,15 @@
 .projects {
     display: flex;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    background-color: #fff;
 }
 
 .project-title {
     font-size: 3rem;
     font-weight: bold;
     font-family: "Italiana", serif;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .project-content {
@@ -31,7 +29,6 @@
 .project-content .backend-projects {
     display: flex;
     overflow-y: hidden;
-    overflow-x: scroll;
     gap: 1.2rem;
 }
 

@@ -39,7 +39,6 @@
     display: flex;
     width: 28rem;
     gap: 2rem;
-    justify-content: center;
 }
 
 .iright a {
@@ -48,22 +47,20 @@
     text-decoration: none;
     color: #fff;
     gap: 0.5rem;
-    font-size: 1.2rem;
-    background: linear-gradient(to left, var(--orange), rgb(0, 0, 128));
-    padding: 0 0.5rem;
+    font-size: 1rem;
+    background: var(--button);
+    padding:0.1rem 1rem;
     border-radius: 1rem;
-    width: 9em;
-    justify-content: center;
 
 }
 
 .iright a:hover {
-    background: linear-gradient(to left, var(--orange), rgb(0, 0, 101));
+    transition: all 0.3s ease-in-out;
+    background: var(--button-hover)
 }
 
 .iright a .icon-social {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
 }
 
 .intro .ileft .dynamic-txts {
@@ -122,7 +119,7 @@
     align-items: center;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .intro {
         margin-left: 1rem;
     }
