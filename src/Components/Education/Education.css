@@ -4,9 +4,9 @@
     flex-direction: column;
     background-color: var(--default-bg);
     align-items: center;
-    padding-bottom: 4rem;
+    padding-bottom: 3.5rem;
 }
-
+ 
 .about-me {
     font-size: 3rem;
     font-weight: bold;
@@ -73,6 +73,7 @@
 @media screen and (max-width:800px) {
     .education {
         padding-top: 2rem;
+        padding-bottom: 0;
     }
 
     .about-me {

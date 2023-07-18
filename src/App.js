@@ -5,7 +5,7 @@ import Projects from "./Components/Projects/Projects";
 import About from "./Components/About/About";
 import Education from "./Components/Education/Education";
 import Contact from "./Components/Contact/Contact";
-// import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
 import './App.css';
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Education darkmode={darkMode} />
       <Projects darkmode={darkMode} />
       <Contact darkmode={darkMode} />
-      {/* <Footer/> */}
+      <Footer/>
 
     </div>
 

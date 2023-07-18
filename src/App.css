@@ -1,7 +1,6 @@
 /* Light Mode Variables */
 :root {
   --orange: #094298;
-  --light-blue-contact: #e6f7ff;
   --blue-hover: rgb(0, 0, 101);
   --black: #000;
 
@@ -13,6 +12,8 @@
   --skill-bg:rgb(4, 4, 82);
   --skill-bg-card:#fff;
   --project-card-border:#000;
+  --light-blue-contact: #e6f7ff;
+  --contact-boxshadow:#fff;
 
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
   --footer-text: #fff;
@@ -24,26 +25,27 @@
 
 /* Dark Mode Variables */
 :root .dark-mode {
-  --orange: #5038a5;
+  --orange: #5230c9;
   --blue-hover: rgb(0, 0, 101);
   --black: #fff;
 
   --skill-main-bg:#000000;
   --skill-bg:#0c0618;
   --skill-bg-card:#0c0618;
-  --project-card-border:#5038a5;
+  --project-card-border:#5230c9;
+  --light-blue-contact: #000000;
 
   
   --theme-color: #000000;
   --opposite-theme-color: #fff;
-  
+  --contact-boxshadow:#5038a5;
   --boxShadow: 0px 19px 60px rgb(255 255 255 / 8%);
 
 
   --default-bg: #000000;
 
-  --button:linear-gradient(to left,#5000d0, rgb(22, 0, 65));
-  --button-hover:linear-gradient(to left,#3c009c, rgb(15, 0, 44));
+  --button:linear-gradient(to left,#5230c9, rgb(41, 3, 116));
+  --button-hover: linear-gradient(to left,#4122b4,rgb(43, 10, 110));
 }
 
 /* Light Mode Styles */
@@ -63,7 +65,8 @@
   cursor: pointer;
   color: #fff;
   font-weight: 550;
-  font-family: Popins;
+  font-family: Poppins;
+  transition: all 0.3s ease-in-out;
 }
 .button:hover {
   transition: all 0.3s ease-in-out;

@@ -1,13 +1,15 @@
 .about {
     display: flex;
-    padding-top: 6rem;
     flex-direction: column;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     align-items: center;
     padding-bottom: 4rem;
-    /* min-height: 100vh; */
+    min-height: calc(100vh - 3.5rem);
 }
-
+.about-me{
+    margin-top: 4rem;
+}
+ 
 .me {
     color: var(--orange);
 }
@@ -107,9 +109,12 @@ h4 {
 }
 
 @media only screen and (max-width:800px) {
-    .about {
-        padding-top: 2rem;
+    .about{
+        min-height: 0;
         padding-bottom: 2rem;
+    }
+    .about-me{
+        margin-top: 0;
     }
 
     .about-container {

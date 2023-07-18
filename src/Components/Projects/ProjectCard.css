@@ -4,6 +4,7 @@
   border: 1px solid var(--project-card-border);
   border-radius: 4px;
   padding: 1rem;
+  padding-bottom: 1.5rem;
   width: 25rem;
   height: 18rem;
 }
@@ -37,6 +38,11 @@
   font-size: 1.5rem;
   height: 1.5rem;
   color: var(--opposite-theme-color);
+}
+.project-actions .project-links .github-link:hover
+{
+  transition: all 0.3s ease-in-out;
+  color: rgb(163, 163, 163);
 }
 .desc {
   font-size: 1rem;

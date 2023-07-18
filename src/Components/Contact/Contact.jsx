@@ -1,48 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Contact.css';
-import ContactLottie from '../../Lotties/footerLottie';
-import Feedback from '../Feedback/Feedback';
 
-const Contact = ({darkmode}) => {
-  const [showFeedback, setShowFeedback] = useState(false);
-
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    setShowFeedback(true);
-  };
-
+const Contact = ({ darkmode }) => {
   return (
-    <div className="contact" id="Contact">
+    <div className={`contact ${darkmode ? 'darkmode' : ''}`} id="Contact">
       <div className={`${darkmode ? 'about-line' : ''}`}>
       </div>
       <div className="cleft">
-       Get in <span>Touch</span>
+        Get in <span>Touch</span>
       </div>
       <div className="container">
-        <form onSubmit={handleFormSubmit} action='https://getform.io/f/e0274019-a68a-46d6-a876-dc800c3934b7' method='POST'>
+        <form className="contact-form">
           <div className="form-group capitalise-name">
-            <label htmlFor="name"></label>
-            <input type="text" id="name" name="name" required  placeholder='Name:'/>
+            <label htmlFor="name" className="form-label ">
+              Enter Your Name
+            </label>
+            <input type="text" id="name" className="contact-input" />
           </div>
           <div className="form-group">
-            <label htmlFor="email"></label>
-            <input type="email" id="email" name="email" required placeholder='Email: ' />
+            <label htmlFor="email" className="form-label">
+              Enter Your Email
+            </label>
+            <input type="email" id="email" className="contact-input" />
           </div>
           <div className="form-group">
-            <label htmlFor="message" ></label>
-            <textarea id="message" rows={6} cols={30} name="message" required placeholder='Enter Your Message'></textarea>
+            <label htmlFor="message" className="form-label">
+              Enter Your Message
+            </label>
+            <textarea id="message" className="contact-message"></textarea>
           </div>
-          <button type="submit" className='button'>Send</button>
+          <button type="submit" className="button">
+            Send
+          </button>
         </form>
-
-        {showFeedback ? (
-          <Feedback />
-        ) : (
-          <div>
-          </div>
-        )}
-        <ContactLottie />
-
       </div>
     </div>
   );
