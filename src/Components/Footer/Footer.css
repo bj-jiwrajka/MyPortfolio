@@ -1,8 +1,7 @@
 .footer {
-    padding: 1em 0;
-    color: var(--footer-text);
-    user-select: none;
-    background: linear-gradient(to left, var(--orange), rgb(0, 0, 101));
+    padding: 1rem;
+    color: #fff;
+    background:var(--footer-bg);
 }
 
 .footer-container {
@@ -11,7 +10,6 @@
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
-
 }
 
 .fleft1 {
@@ -80,6 +78,9 @@
     margin-top: 1em;
     text-align: center;
 
+}
+.footer .about-line {
+   width: 100%;
 }
 
 @media screen and (max-width: 683px) {

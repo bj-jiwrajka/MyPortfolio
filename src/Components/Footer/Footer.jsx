@@ -3,11 +3,12 @@ import { Icon } from '@iconify/react';
 import { Link } from 'react-scroll';
 import './Footer.css';
 
-function Footer() {
+function Footer({ darkmode }) {
     return (
 
         <footer className="footer">
-
+            <div className={`${darkmode ? 'about-line' : ''}`}>
+            </div>
 
             <div className="footer-container">
 

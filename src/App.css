@@ -16,9 +16,11 @@
   --contact-boxshadow:#fff;
 
   --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --footer-text: #fff;
   --footer-text-hover: #ececec;
   --default-bg: rgb(239, 244, 246);
+
+  --footer-bg:  linear-gradient(to left, var(--orange), rgb(0, 0, 128));
+
   --button:  linear-gradient(to left, var(--orange), rgb(0, 0, 128));
   --button-hover:linear-gradient(to left, var(--orange), rgb(0, 0, 101));
 }
@@ -43,6 +45,8 @@
 
 
   --default-bg: #000000;
+
+  --footer-bg: #000;
 
   --button:linear-gradient(to left,#5230c9, rgb(41, 3, 116));
   --button-hover: linear-gradient(to left,#4122b4,rgb(43, 10, 110));

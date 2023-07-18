@@ -22,7 +22,7 @@ function App() {
       <Education darkmode={darkMode} />
       <Projects darkmode={darkMode} />
       <Contact darkmode={darkMode} />
-      <Footer/>
+      <Footer darkmode={darkMode}/>
 
     </div>
 
