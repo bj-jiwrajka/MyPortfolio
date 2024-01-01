@@ -7,7 +7,9 @@ import Project3 from '../../img/Project3.png';
 import Oikyotaan from '../../img/Oikyotaan.png'
 import OnlineMeal from '../../img/OnlineMeal.png';
 import ProjectCard from './ProjectCard';
+import cpvalor from '../../img/cpvalor.png';
 import Portfolio from '../../img/Portfolio.png';
+import guidanceguru from '../../img/guidanceguru.png';
 const Projects = ({darkmode}) => {
     return (
         <div className='projects' id='Projects'>
@@ -18,6 +20,7 @@ const Projects = ({darkmode}) => {
             </div>
             <div className="project-content">
 
+                
                 <div className="backend-icons">
                     <div className="project-icons">
                         <SkillCard skill="NodeJS" icon="logos:nodejs" />
@@ -33,6 +36,18 @@ const Projects = ({darkmode}) => {
                     <div className="backend-projects">
                         <ProjectCard name={"GRAFINY"} img={Project3} desc={"It allows you to share and view notes,assignments and other educational resources"} github={"https://github.com/gdsc-nits-org/grafiny-client"} />
                         <ProjectCard name={"CSS Website"} img={Project2} link={"https://nits-css.live"} desc={"It is the official website of Computer Science Society, NIT Silchar"} github={"https://github.com/ComputerScienceSoceityNITS/CSSWebsite"} />
+                    </div>
+                </div>
+                <div className="backend-icons">
+                    <div className="project-icons">
+                        <SkillCard skill="Sveltekit" icon="logos:svelte-icon" />
+                        <SkillCard skill="CSS3" icon="logos:css-3" />
+                        <SkillCard skill="JavaScript" icon="logos:javascript" />
+                        <SkillCard skill="Netlify" icon="logos:netlify-icon" />
+                    </div>
+                    <div className="backend-projects">
+                        <ProjectCard name={"cpValor"} img={cpvalor} desc={"It calculates the worth of your coding profile"} github={"https://github.com/bj-jiwrajka/cpvalor"} link={"https://cpvalor.netlify.app"} />
+                        <ProjectCard name={"Guidance Guru"} img={guidanceguru} link={"https://guidanceguru.netlify.app"} desc={"It is an advice provider that gives you the correct guidance for every problem "} github={"https://github.com/bj-jiwrajka/guidance-guru"} />
                     </div>
                 </div>
                 <div className="backend-icons">
@@ -60,6 +75,7 @@ const Projects = ({darkmode}) => {
                         <ProjectCard name={"My Online Meal"} img={OnlineMeal} desc={"An online meal ordering website where users can order delicious meals"} link={"https://bj-jiwrajka.github.io/first_food_website/"} github={"https://github.com/bj-jiwrajka/first_food_website"} />
                     </div>
                 </div>
+
             </div>
         </div>
     )

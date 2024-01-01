@@ -28,6 +28,11 @@ const Services = ({darkmode}) => {
           <SkillCard skill="GitHub" icon="logos:github-icon" />
           <SkillCard skill="Vercel" icon="logos:vercel-icon" />
           <SkillCard skill="C/C++" icon="logos:c" />
+          <SkillCard skill="Svelte" icon="logos:svelte-icon" />
+          <SkillCard skill="SvelteKit" icon="logos:svelte-icon" />
+          <SkillCard skill="TailwindCSS" icon="logos:tailwindcss-icon" />
+          {/* <SkillCard skill="Netlify" icon="logos:netlify" /> */}
+
         </div>
       </div>
     </div>
