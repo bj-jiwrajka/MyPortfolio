@@ -7,7 +7,11 @@ import Education from "./Components/Education/Education";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import './App.css';
+
+
 function App() {
   const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => {
@@ -15,14 +19,15 @@ function App() {
   };
   return (
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-      <Navbar  darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <ToastContainer className="toast-conatiner" />
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Intro />
-      <About darkmode={darkMode}/>
-      <Services darkmode={darkMode}/>
+      <About darkmode={darkMode} />
+      <Services darkmode={darkMode} />
       <Education darkmode={darkMode} />
       <Projects darkmode={darkMode} />
       <Contact darkmode={darkMode} />
-      <Footer darkmode={darkMode}/>
+      <Footer darkmode={darkMode} />
 
     </div>
 

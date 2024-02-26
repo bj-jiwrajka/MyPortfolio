@@ -84,3 +84,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   border: 1px solid var(--black);
 }
+
+.toast-container{
+  white-space: nowrap;
+}
