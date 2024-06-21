@@ -6,10 +6,11 @@
     padding-bottom: 4rem;
     min-height: calc(100vh - 3.5rem);
 }
-.about-me{
+
+.about-me {
     margin-top: 4rem;
 }
- 
+
 .me {
     color: var(--orange);
 }
@@ -53,6 +54,7 @@
 
 .image-container img {
     width: 100%;
+    border: 3px solid var(--orange);
 }
 
 #bending-image {
@@ -103,17 +105,23 @@
     color: var(--orange);
 }
 
+.aleft .about-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .aleft h3,
 h4 {
     line-height: 1rem;
 }
 
 @media only screen and (max-width:800px) {
-    .about{
+    .about {
         min-height: 0;
         padding-bottom: 2rem;
     }
-    .about-me{
+
+    .about-me {
         margin-top: 2rem;
     }
 
