@@ -172,3 +172,10 @@
     transform: rotateY(-180deg);
     transform-style: preserve-3d;
 }
+
+@media screen and (max-width:600px) {
+    .flip_card_front,
+    .flip_card_back {
+        width: 100%
+    }
+}
