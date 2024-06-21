@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './About.css';
-import Bijay from '../../img/me pfp.jpg';
-import { Icon } from '@iconify/react';
+import { useState } from "react";
+import "./About.css";
+import Bijay from "../../img/me pfp.jpg";
+import { Icon } from "@iconify/react";
 
 const About = ({ darkmode }) => {
   const [rotateY, setRotateY] = useState(0);
@@ -26,22 +26,20 @@ const About = ({ darkmode }) => {
   };
 
   return (
-    <div className='about' id='About'>
-      <div className={`${darkmode ? 'about-line' : ''}`}>
-      </div>
-      <div className='about-me'>
+    <div className="about" id="About">
+      <div className={`${darkmode ? "about-line" : ""}`}></div>
+      <div className="about-me">
         About
-        <span className='me'> Me</span>
+        <span className="me"> Me</span>
       </div>
-      <div className='about-container'>
+      <div className="about-container">
         <div className="resume-box">
           <div
             className="aright"
             onMouseMove={handleMouseMove}
             onMouseLeave={resetImageTransform}
           >
-            <div className="image-container"
-            >
+            <div className="image-container">
               <img
                 src={Bijay}
                 alt="myphoto"
@@ -53,8 +51,13 @@ const About = ({ darkmode }) => {
             </div>
           </div>
           <div className="resume">
-            <a href="https://bit.ly/bj-jiwrajka" target='_blank' rel='noreferrer'>
-              <button className='button'>Get Resume
+            <a
+              href="https://bit.ly/bj-jiwrajka"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="button">
+                Get Resume
                 <div className="icon">
                   <Icon icon="fa-brands:get-pocket" />
                 </div>
@@ -63,26 +66,36 @@ const About = ({ darkmode }) => {
           </div>
         </div>
 
-
-
         <div className="aleft">
           <span>
             <span>
               <h3>I'm Bijay Jiwrajka</h3>
-              <h4>Passionate Web Developer | Competitive Programming Enthusiast</h4>
+              <h4>
+                Passionate Web Developer | Competitive Programming Enthusiast
+              </h4>
             </span>
             <span>
-              A third-year CSE undergraduate student at the National Institute of Technology, Silchar. I have been a part of global communities such as Google Developer Students' Club, NITS, and other societies like the Computer Science Society, NIT Silchar.
+              I am a final year Computer Science and Engineering student at the
+              National Institute of Technology, Silchar. My journey includes an
+              internship as a Software Engineering Intern at Cisco, along with
+              involvement in global communities like the Google Developer
+              Students Club (GDSC) and societies such as the Computer Science
+              Society at NIT Silchar.
               <br />
               <br />
-              I'm a passionate developer who enjoys tackling challenging problems and crafting engaging websites. Over the years, I've gained valuable experience by working on diverse projects and honed my skills in software development.
+              I'm a passionate developer who enjoys tackling challenging
+              problems and crafting engaging websites. Over the years, I've
+              gained valuable experience by working on diverse projects and
+              honed my skills in software development.
               <br />
-
-              <p className='mbl_hide'>
-                My dedication to continuous learning has allowed me to stay up-to-date with the latest technologies and industry trends. I thrive in collaborative environments and have a strong commitment to delivering high-quality results.
+              <p className="mbl_hide">
+                My dedication to continuous learning has allowed me to stay
+                up-to-date with the latest technologies and industry trends. I
+                thrive in collaborative environments and have a strong
+                commitment to delivering high-quality results.
               </p>
             </span>
-            <div className='about-info'>
+            <div className="about-info">
               <div>
                 <span>Age</span>: 21
                 <br />
@@ -94,12 +107,10 @@ const About = ({ darkmode }) => {
                 <span>College</span>: National Institute of Technology, Silchar
               </div>
             </div>
-
           </span>
         </div>
       </div>
     </div>
   );
 };
-
 export default About;

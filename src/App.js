@@ -1,16 +1,8 @@
-import Navbar from "./Components/Navbar/Navbar";
-import Intro from "./Components/Intro/Intro";
-import Services from "./Components/Services/Services";
-import Projects from "./Components/Projects/Projects";
-import About from "./Components/About/About";
-import Education from "./Components/Education/Education";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+import { Navbar, Intro, Services, Projects, About, Education, Contact, Footer, Certifications } from './Components/index';
 import { useState } from "react";
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './App.css';
-
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -26,12 +18,10 @@ function App() {
       <Services darkmode={darkMode} />
       <Education darkmode={darkMode} />
       <Projects darkmode={darkMode} />
+      <Certifications darkmode={darkMode} />
       <Contact darkmode={darkMode} />
       <Footer darkmode={darkMode} />
-
     </div>
-
   );
 }
-
 export default App;
