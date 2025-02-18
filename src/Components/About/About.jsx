@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./About.css";
-import Bijay from "../../img/me pfp.jpg";
+import Bijay from "../../img/pfp_formal.jpeg";
 import { Icon } from "@iconify/react";
 
 const About = ({ darkmode }) => {
